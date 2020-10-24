@@ -1,4 +1,4 @@
-name: Actualizar Datos del BOE
+name: :blue_book: Actualizar Datos del BOE
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
       run: |
         curl "https://www.boe.es/biblioteca_juridica/index.php?lang=es&tipo=C&modo=1" -o documentos/nacional/boe/codigos/codigos.html
     - name: Sacar Enlaces a Codigos
-      run: pipenv ./scripts/listar-codigos-boe.py
+      run: pipenv run ./scripts/listar-codigos-boe.py
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
