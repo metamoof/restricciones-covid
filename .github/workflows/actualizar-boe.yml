@@ -16,10 +16,6 @@ jobs:
       run: |-
         curl "https://www.boe.es/biblioteca_juridica/index.php?lang=es&tipo=C&modo=1" -o documentos/nacional/boe/colecciones/colecciones.html
     - name: Commit and push if it changed
-      run: |-
-        git config user.name "Automatizado"
-        git config user.email "actions@users.noreply.github.com"
-        git add -A
-        timestamp=$(date -u)
-        git commit -m ":blue_book: Actualización de Cabecera colecciones: ${timestamp}" || exit 0
-        git push
+      uses: ./.github/actions/commit-changes
+      with:
+        commit-message: ":blue_book: Actualización de Cabecera colecciones: ${timestamp}"
