@@ -1,16 +1,18 @@
 name: Commit and push
 description: Commit changes and push them
 inputs:
-        commit-message:
-            description: Commit message
-            required: true
-            default: ':blue_book: Actualización datos: ${timestamp}'
-steps:
-    run: |-
+  commit-message:
+    description: Commit message
+    required: true
+    default: ':blue_book: Actualización datos: ${timestamp}'
+runs:
+  using: "composite"
+  steps:
+    - run: |-
         git config user.name "Automatizado"
         git config user.email "actions@users.noreply.github.com"
         git add -A
         timestamp=$(date -u)
-        git commit -m "${{ inputs.commit-message}}" || exit 0
+        git commit -m "${{ inputs.commit-message }}" || exit 0
         git push
-    shell: bash
+      shell: bash
