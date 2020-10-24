@@ -26,7 +26,7 @@ jobs:
     - name: Sacar Enlaces a Codigos
       uses: VaultVulp/action-pipenv@v2.0.1
       with:
-        command: run ./scripts/listar-codigos-boe.py
+        command: run python ./scripts/listar-codigos-boe.py
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
