@@ -1,0 +1,2395 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Description" content="Biblioteca Jur&iacute;dica Digital" />
+    <title>BOE.es - Biblioteca Jur&iacute;dica Digital</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <base target="_top" />
+    <link type="text/css" href="/estilos/boe.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/estilos/buscador.css" type="text/css">
+    <link rel="stylesheet" href="/estilos/biblioteca.css" type="text/css">
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie8.css" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="fuera">Agencia Estatal Bolet&iacute;n Oficial del Estado</h1>
+      <ul class="fuera">
+        <li><a accesskey="c" href="#contenedor">Ir a contenido</a></li>
+        <li><a accesskey="5" href="/diario_boe/">Consultar el diario oficial BOE</a></li>
+      </ul>
+      <div id="logosInicio">
+        <span id="logoPresidenciaMovil"><a href="http://www.mpr.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPRmovil.png" alt="Ministerio de la Presidencia"></a></span>
+        <span id="logoPresidencia"><a href="http://www.mpr.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPR.png" alt="Ministerio de la Presidencia"></a></span>
+        <span id="logoAgencia"><a accesskey="1" href="/" title="Ir a la p&aacute;gina de inicio"><img src="/imagenes/logoBOE.gif" srcset="/imagenes/logoBOE.svg" alt="Agencia Estatal Bolet&iacute;n Oficial del Estado"></a></span>
+      </div> <!-- #logosInicio -->
+    </div> <!-- #header -->
+    <div id="top" class="banda-menu">
+    <div class="menu-wrapper">
+      <div id="logo-movil-boe-container">
+        <a href="/" title="Ir a la p&aacute;gina de inicio"><img alt="Agencia Estatal Bolet&iacute;n Oficial del Estado" src="/imagenes/logoBlanco128.png"></a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item menu-idiomas">
+          <div id="selector-idioma">
+            <p class="fuera">Puede seleccionar otro idioma:</p>
+            <input id="activar-idiomas" type="checkbox">
+            <label class="idioma-actual" for="activar-idiomas" title="Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span class="descripcion-idioma pc tablet">Castellano</span><span class="descripcion-idioma movil">es</span><span class="triangulo"><span></span></span></label>
+            <ul id="lista-idiomas">
+              <li><a href="index.php?lang=es&tipo=C&modo=1" lang="es" hreflang="es" title="Cambiar a espa&ntilde;ol/castellano"><span aria-hidden="true" class="idioma"><abbr title="espa&ntilde;ol/castellano">es</abbr><em>Castellano</em></span></a></li>
+              <li><a href="index.php?lang=ca&tipo=C&modo=1" lang="ca" hreflang="ca" title="Canviar a catal&agrave;"><span aria-hidden="true" class="idioma"><abbr title="catal&agrave;">ca</abbr><em>Catal&agrave;</em></span></a></li>
+              <li><a href="index.php?lang=gl&tipo=C&modo=1" lang="gl" hreflang="gl" title="Cambiar a galego"><span aria-hidden="true" class="idioma"><abbr title="galego">gl</abbr><em>Galego</em></span></a></li>
+              <li><a href="index.php?lang=eu&tipo=C&modo=1" lang="eu" hreflang="eu" title="-ra aldatu euskara"><span aria-hidden="true" class="idioma"><abbr title="euskara">eu</abbr><em>Euskara</em></span></a></li>
+              <li><a href="index.php?lang=va&tipo=C&modo=1" lang="ca-valencia" hreflang="ca-valencia" title="Canviar a valenci&agrave;"><span aria-hidden="true" class="idioma"><abbr title="valenci&agrave;">va</abbr><em>Valenci&agrave;</em></span></a></li>
+              <li><a href="index.php?lang=en&tipo=C&modo=1" lang="en" hreflang="en" title="Change to English"><span aria-hidden="true" class="idioma"><abbr title="english">en</abbr><em>English</em></span></a></li>
+              <li><a href="index.php?lang=fr&tipo=C&modo=1" lang="fr" hreflang="fr" title="Changer fran&ccedil;ais"><span aria-hidden="true" class="idioma"><abbr title="fran&ccedil;ais">fr</abbr><em>Fran&ccedil;ais</em></span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item resto">
+          <a accesskey="4" href="/buscar/"><span class="botonBuscar">Buscar</span></a>
+        </li>
+        <li class="menu-item resto">
+          <a href="/mi_boe/">
+            <span class="botonMiBOE">Mi BOE <span class="luz">Desconectado.<br/>Pulse para acceder al servicio 'Mi BOE'</span></span>
+          </a>
+        </li>
+        <li class="menu-item movil buscar">
+          <a href="/buscar/">
+            <img alt="Buscar" src="/imagenes/logoBuscar.png" srcset="/imagenes/logoBuscar.svg">
+          </a>
+        </li>
+        <li class="menu-item movil">
+          <a href="/mi_boe/">
+            <img alt="Mi BOE" src="/imagenes/logoMiBOE.png" srcset="/imagenes/logoMiBOE.svg">
+          </a>
+        </li>
+        <li class="menu-item menu-menu"><!--  -->
+          <input id="activar-menu" name="activar" type="checkbox" title="Desplegar men&uacute;">
+          <label class="click-desplegar resto" for="activar-menu" title="Haga clic o utilice barra espaciadora para abrir o cerrar opciones">Men&uacute;
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="activar-menu-movil" name="activar" type="checkbox" title="Desplegar men&uacute;">
+          <label class="click-desplegar movil" for="activar-menu-movil"><em>Men&uacute;</em>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu-container">
+            <ul class="menu-item-list">
+              <li class="menu-item first">
+                <p><a href="/index.php#diarios" class="inline">Diarios Oficiales</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/diario_boe" title="Bolet&iacute;n Oficial del Estado">BOE</a></li>
+                  <li><a href="/diario_borme" title="Bolet&iacute;n Oficial del Registro Mercantil">BORME</a></li>
+                  <li><a href="/legislacion/otros_diarios_oficiales.php">Otros diarios oficiales</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <p><a href="/index.php#juridico">Informaci&oacute;n Jur&iacute;dica</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/legislacion/">Todo el Derecho</a></li>
+                  <li><a href="/biblioteca_juridica/">Biblioteca Jur&iacute;dica Digital</a></li>
+                </ul>
+              </li>
+              <li class="menu-item last">
+                <p><a href="/index.php#servicios-adicionales">Otros servicios</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/notificaciones">Notificaciones en BOE</a></li>
+                  <li><a href="https://subastas.boe.es">Portal de subastas</a></li>
+                  <li><a href="/anuncios">Anunciantes</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> <!-- .menu-container -->
+        </li><!--  -->
+      </ul>
+    </div> <!-- .menu-wrapper -->
+    </div> <!-- .banda-menu -->
+    <div id="franjaMigas">
+      <div class="contMigas">
+        <span class="fraseMigas">Est&aacute; <abbr title="usted">Vd.</abbr> en</span>
+        <ul class="migas">
+          <li><a href="/">Inicio</a></li>
+          <li class="destino">Biblioteca Jur&iacute;dica Digital</li>        </ul>
+        <div id="solapa">
+        </div><!-- solapa -->
+      </div><!-- contMigas -->
+    </div> <!-- #franjaMigas -->
+    <div id="contenedor">
+      <div id="contenido" class="poolLegis"><h2>Biblioteca Jur&iacute;dica Digital</h2>
+<div class="pretexto">
+  <ul class="navlist">
+    <li>
+      <a href="./index.php?tipo=E&modo=1" >Editorial</a>
+    </li>
+    <li>
+      <a href="./index.php?tipo=L&modo=1" >Libros</a>
+    </li>
+    <li>
+      <a href="./index.php?tipo=C&modo=1" class="current">C&oacute;digos</a>
+    </li>
+    <li>
+      <a href="./index.php?tipo=U&modo=1" ><span class="pc tablet">C&oacute;digos </span>Universitarios</a>
+    </li>
+    <li>
+      <a href="./index.php?tipo=R&modo=1" ><span class="pc">Anuarios y otras publicaciones</span><span class="tablet">Otras publicaciones</span><span class="movil">Otros</span></a>
+    </li>
+  </ul>
+</div>
+<div class="botonera">
+  <div>
+    <img class="grid botonIzda" src="../../imagenes/codigos/gifTransparente.gif" alt="vista estanter&iacute;a">
+  </div><a href="index.php?modo=2&tipo=C" title="Cambiar a la vista de Lista">
+    <img class="grid botonDcha" src="../../imagenes/codigos/gifTransparente.gif" alt="vista lista">
+  </a>
+</div>
+<h3>COLECCI&Oacute;N &laquo;C&Oacute;DIGOS ELECTR&Oacute;NICOS&raquo;</h3>
+
+<a href="https://www.youtube.com/watch?v=uttoh3xvxDI" target="_blank" title="Abre nueva ventana">
+    <img class="tutorial" src="/imagenes/video_tutorial.png" alt="V&iacute;deo: C&oacute;digos electr&oacute;nicos" title="Abre una nueva ventana al v&iacute;deo: C&oacute;digos electr&oacute;nicos"/>
+  </a>
+  
+<div class="opciones-flotando">
+	<p class="texto-biblioteca-juridica">Contiene compilaciones de las principales normas vigentes del ordenamiento jur&iacute;dico, <strong>permanentemente actualizadas</strong>, presentadas por ramas del Derecho. Se complementan con un sistema de <strong>alertas de actualizaci&oacute;n</strong> cuya suscripci&oacute;n se puede realizar a trav&eacute;s de los servicios de <a href="/mi_boe/">Mi&nbsp;BOE</a>.</p>
+</div>
+<div class="linkIzq mejorarCod "><a href="mailto:codigos-electronicos@boe.es"><img src="/imagenes/ayudenos.png" alt="Enviar correo electr&oacute;nico">Ay&uacute;denos a mejorar</a></div>
+<div class="estanteria">
+  <div class="estante">
+    <a id="COVID-19"></a>
+    <h4><span class="epigrafe">COVID-19</span></h4>
+    <ul id="estante48">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=384_Desescalada_COVID-19_Fase_3&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/384_Desescalada_COVID-19_Fase_3.png" alt="Desescalada COVID-19: Fase 3" title="Desescalada COVID-19: Fase 3" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=380_Desescalada_COVID-19_Fase_2&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/380_Desescalada_COVID-19_Fase_2.png" alt="Desescalada COVID-19: Fase 2" title="Desescalada COVID-19: Fase 2" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=366_Desescalada_COVID-19_Fase_1&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/366_Desescalada_COVID-19_Fase_1.png" alt="Desescalada COVID-19: Fase 1" title="Desescalada COVID-19: Fase 1" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=381_Desescalada_COVID-19_Fase_0&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/381_Desescalada_COVID-19_Fase_0.png" alt="Desescalada COVID-19: Fase 0" title="Desescalada COVID-19: Fase 0" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=363_COVID-19_Movilidad_de_las_Personas&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/363_COVID-19_Movilidad_de_las_Personas.png" alt="COVID-19: Movilidad de las Personas" title="COVID-19: Movilidad de las Personas" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=360_COVID-19_Medidas_Tributarias&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/360_COVID-19_Medidas_Tributarias.png" alt="COVID-19: Medidas Tributarias" title="COVID-19: Medidas Tributarias" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=358_COVID-19_Trabajadores_Autonomos&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/358_COVID-19_Trabajadores_Autonomos.png" alt="COVID-19: Trabajadores Autónomos" title="COVID-19: Trabajadores Autónomos" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=359_COVID-19_Colectivos_Vulnerables&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/359_COVID-19_Colectivos_Vulnerables.png" alt="COVID-19: Colectivos Vulnerables" title="COVID-19: Colectivos Vulnerables" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=361_COVID-19_Arrendamiento_de_vivienda_y_locales_comerciales&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/361_COVID-19_Arrendamiento_de_vivienda_y_locales_comerciales.png" alt="COVID-19: Arrendamiento de vivienda y locales comerciales" title="COVID-19: Arrendamiento de vivienda y locales comerciales" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=355_COVID-19_Derecho_Europeo_Estatal_y_Autonomico_&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/355_COVID-19_Derecho_Europeo_Estatal_y_Autonomico_.png" alt="COVID-19: Derecho Europeo, Estatal y Autonómico " title="COVID-19: Derecho Europeo, Estatal y Autonómico " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Constitución Española"></a>
+    <h4><span class="epigrafe">Constitución Española</span></h4>
+    <ul id="estante24">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=151_Constitucion_Espanola&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/151_Constitucion_Espanola.png" alt="Constitución Española" title="Constitución Española" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=160_Constitucion_Espanola_________________La_Constitution_Espagnole&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/160_Constitucion_Espanola_________________La_Constitution_Espagnole.png" alt="Constitución Española _  La Constitution Espagnole" title="Constitución Española _  La Constitution Espagnole" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=157_Constitucion_Espanola_________________Die_Spanische_Verfassung_&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/157_Constitucion_Espanola_________________Die_Spanische_Verfassung_.png" alt="Constitución Española _  Die Spanische Verfassung " title="Constitución Española _  Die Spanische Verfassung " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=158_Constitucion_Espanola_________________The_Spanish_Constitution_&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/158_Constitucion_Espanola_________________The_Spanish_Constitution_.png" alt="Constitución Española _  The Spanish Constitution " title="Constitución Española _  The Spanish Constitution " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=159_Constitucion_Espanola__________________La_Costituzione_Spagnola&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/159_Constitucion_Espanola__________________La_Costituzione_Spagnola.png" alt="Constitución Española _  La Costituzione Spagnola" title="Constitución Española _  La Costituzione Spagnola" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=387_Constitucion_Espanola_________________Constituicao_Espanhola&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/387_Constitucion_Espanola_________________Constituicao_Espanhola.png" alt="Constitución Española _  Constituição Espanhola" title="Constitución Española _  Constituição Espanhola" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Derecho Constitucional"></a>
+    <h4><span class="epigrafe">Derecho Constitucional</span></h4>
+    <ul id="estante1">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=042_Codigo_de_Derecho_Constitucional&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/042_Codigo_de_Derecho_Constitucional.png" alt="Código de Derecho Constitucional" title="Código de Derecho Constitucional" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=012_Tribunal_Constitucional&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/012_Tribunal_Constitucional.png" alt="Tribunal Constitucional" title="Tribunal Constitucional" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=025_Consejo_de_Estado&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/025_Consejo_de_Estado.png" alt="Consejo de Estado" title="Consejo de Estado" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=246_Codigo_Parlamentario_Normativa_estatal&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/246_Codigo_Parlamentario_Normativa_estatal.png" alt="Código Parlamentario (Normativa estatal)" title="Código Parlamentario (Normativa estatal)" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=280_Codigo_del_Ministerio_Fiscal&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/280_Codigo_del_Ministerio_Fiscal.png" alt="Código del Ministerio Fiscal" title="Código del Ministerio Fiscal" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=070_Codigo_de_Extranjeria&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/070_Codigo_de_Extranjeria.png" alt="Código de Extranjería" title="Código de Extranjería" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=304_Igualdad_de_Genero_&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/304_Igualdad_de_Genero_.png" alt="Igualdad de Género " title="Igualdad de Género " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=104_Codigo_de_Libertad_Religiosa&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/104_Codigo_de_Libertad_Religiosa.png" alt="Código de Libertad Religiosa" title="Código de Libertad Religiosa" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=055_Proteccion_de_Datos_de_Caracter_Personal&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/055_Proteccion_de_Datos_de_Caracter_Personal.png" alt="Protección de Datos de Carácter Personal" title="Protección de Datos de Carácter Personal" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=094_Codigo_del_Derecho_al_Olvido&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/094_Codigo_del_Derecho_al_Olvido.png" alt="Código del Derecho al Olvido" title="Código del Derecho al Olvido" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=125_Codigo_de_la_Discapacidad&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/125_Codigo_de_la_Discapacidad.png" alt="Código de la Discapacidad" title="Código de la Discapacidad" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=154_Codigo_de_Asociaciones&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/154_Codigo_de_Asociaciones.png" alt="Código de Asociaciones" title="Código de Asociaciones" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=101_Codigo_de_Derecho_Electoral&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/101_Codigo_de_Derecho_Electoral.png" alt="Código de Derecho Electoral" title="Código de Derecho Electoral" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=286_Legislacion_de_Menores&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/286_Legislacion_de_Menores.png" alt="Legislación de Menores" title="Legislación de Menores" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=324_Codigo_de_Derecho_Publico_de_la_Juventud&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/324_Codigo_de_Derecho_Publico_de_la_Juventud.png" alt="Código de Derecho Público de la Juventud" title="Código de Derecho Público de la Juventud" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Derecho Administrativo General"></a>
+    <h4><span class="epigrafe">Derecho Administrativo General</span></h4>
+    <ul id="estante2">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=044_Codigo_de_Derecho_Administrativo&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/044_Codigo_de_Derecho_Administrativo.png" alt="Código de Derecho Administrativo" title="Código de Derecho Administrativo" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=282_Procedimiento_Administrativo_Comun&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/282_Procedimiento_Administrativo_Comun.png" alt="Procedimiento Administrativo Común" title="Procedimiento Administrativo Común" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=029_Codigo_de_Administracion_Electronica&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/029_Codigo_de_Administracion_Electronica.png" alt="Código de Administración Electrónica" title="Código de Administración Electrónica" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=031_Codigo_de_Contratos_del_Sector_Publico&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/031_Codigo_de_Contratos_del_Sector_Publico.png" alt="Código de Contratos del Sector Público" title="Código de Contratos del Sector Público" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=170_Patrimonio_de_las_Administraciones_Publicas&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/170_Patrimonio_de_las_Administraciones_Publicas.png" alt="Patrimonio de las Administraciones Públicas" title="Patrimonio de las Administraciones Públicas" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=118_Codigo_de_Expropiacion_Forzosa&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/118_Codigo_de_Expropiacion_Forzosa.png" alt="Código de Expropiación Forzosa" title="Código de Expropiación Forzosa" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=325_Codigo_del_Turismo&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/325_Codigo_del_Turismo.png" alt="Código del Turismo" title="Código del Turismo" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=331_Transparencia_y_Buen_Gobierno&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/331_Transparencia_y_Buen_Gobierno.png" alt="Transparencia y Buen Gobierno" title="Transparencia y Buen Gobierno" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=338_Codigo_de_Fundaciones&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/338_Codigo_de_Fundaciones.png" alt="Código de Fundaciones" title="Código de Fundaciones" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=354_El_Instituto_de_Espana_y_las_Reales_Academias&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/354_El_Instituto_de_Espana_y_las_Reales_Academias.png" alt="El Instituto de España y las Reales Academias" title="El Instituto de España y las Reales Academias" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Organización Administrativa"></a>
+    <h4><span class="epigrafe">Organización Administrativa</span></h4>
+    <ul id="estante40">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=082_Codigo_de_la_estructura_de_la_Administracion_General_del_Estado&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/082_Codigo_de_la_estructura_de_la_Administracion_General_del_Estado.png" alt="Código de la estructura de la Administración General del Estado" title="Código de la estructura de la Administración General del Estado" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=086_Codigo_de_la__estructura_de_la_Administracion_Institucional__del_Estado&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/086_Codigo_de_la__estructura_de_la_Administracion_Institucional__del_Estado.png" alt="Código de la  estructura de la Administración Institucional  del Estado" title="Código de la  estructura de la Administración Institucional  del Estado" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=017_Estatutos_de_Autonomia&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/017_Estatutos_de_Autonomia.png" alt="Estatutos de Autonomía" title="Estatutos de Autonomía" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=019_Codigo_de_Regimen_Local&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/019_Codigo_de_Regimen_Local.png" alt="Código de Régimen Local" title="Código de Régimen Local" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=253_Colegios_Profesionales&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/253_Colegios_Profesionales.png" alt="Colegios Profesionales" title="Colegios Profesionales" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=116_Codigo_de_Ceremonial_y_Protocolo&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/116_Codigo_de_Ceremonial_y_Protocolo.png" alt="Código de Ceremonial y Protocolo" title="Código de Ceremonial y Protocolo" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=322_Codigo_de_Lucha_contra_el_Fraude_y_la_Corrupcion&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/322_Codigo_de_Lucha_contra_el_Fraude_y_la_Corrupcion.png" alt="Código de Lucha contra el Fraude y la Corrupción" title="Código de Lucha contra el Fraude y la Corrupción" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Función Pública"></a>
+    <h4><span class="epigrafe">Función Pública</span></h4>
+    <ul id="estante41">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=003_Codigo_de_la_Funcion_Publica&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/003_Codigo_de_la_Funcion_Publica.png" alt="Código de la Función Pública" title="Código de la Función Pública" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=124_Codigo_de_la_Funcion_Publica_Normativa_Autonomica&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/124_Codigo_de_la_Funcion_Publica_Normativa_Autonomica.png" alt="Código de la Función Pública Normativa Autonómica" title="Código de la Función Pública Normativa Autonómica" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=135_Funcionarios_de_la_Administracion_de_Justicia&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/135_Funcionarios_de_la_Administracion_de_Justicia.png" alt="Funcionarios de la Administración de Justicia" title="Funcionarios de la Administración de Justicia" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=011_Codigo_de_MUFACE_ISFAS_y_MUGEJU&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/011_Codigo_de_MUFACE_ISFAS_y_MUGEJU.png" alt="Código de MUFACE, ISFAS y MUGEJU" title="Código de MUFACE, ISFAS y MUGEJU" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Seguridad Vial, Transporte y Telecomunicaciones"></a>
+    <h4><span class="epigrafe">Seguridad Vial, Transporte y Telecomunicaciones</span></h4>
+    <ul id="estante38">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=120_Codigo_de_Legislacion_Ferroviaria&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/120_Codigo_de_Legislacion_Ferroviaria.png" alt="Código de Legislación Ferroviaria" title="Código de Legislación Ferroviaria" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=020_Codigo_de_Trafico_y_Seguridad_Vial&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/020_Codigo_de_Trafico_y_Seguridad_Vial.png" alt="Código de Tráfico y Seguridad Vial" title="Código de Tráfico y Seguridad Vial" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=108_Codigo_de_Derecho_de_la_Navegacion_Maritima_y_Aerea&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/108_Codigo_de_Derecho_de_la_Navegacion_Maritima_y_Aerea.png" alt="Código de Derecho de la Navegación Marítima y Aérea" title="Código de Derecho de la Navegación Marítima y Aérea" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=256_Codigo_de_Legislacion_Aeroportuaria&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/256_Codigo_de_Legislacion_Aeroportuaria.png" alt="Código de Legislación Aeroportuaria" title="Código de Legislación Aeroportuaria" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=110_Codigo_de_las_Telecomunicaciones&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/110_Codigo_de_las_Telecomunicaciones.png" alt="Código de las Telecomunicaciones" title="Código de las Telecomunicaciones" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=168_Codigo_de_Derecho_Audiovisual&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/168_Codigo_de_Derecho_Audiovisual.png" alt="Código de Derecho Audiovisual" title="Código de Derecho Audiovisual" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Defensa y Seguridad"></a>
+    <h4><span class="epigrafe">Defensa y Seguridad</span></h4>
+    <ul id="estante20">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=002_Codigo_de_leyes_administrativas_de_la_Defensa&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/002_Codigo_de_leyes_administrativas_de_la_Defensa.png" alt="Código de leyes administrativas de la Defensa" title="Código de leyes administrativas de la Defensa" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=007_Codigo_de_la_Guardia_Civil&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/007_Codigo_de_la_Guardia_Civil.png" alt="Código de la Guardia Civil" title="Código de la Guardia Civil" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=018_Codigo_de_la_Policia_Nacional&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/018_Codigo_de_la_Policia_Nacional.png" alt="Código de la Policía Nacional" title="Código de la Policía Nacional" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=119_Codigo_de_la_Policia_Local&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/119_Codigo_de_la_Policia_Local.png" alt="Código de la Policía Local" title="Código de la Policía Local" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=058_Codigo_de_Seguridad_Privada&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/058_Codigo_de_Seguridad_Privada.png" alt="Código de Seguridad Privada" title="Código de Seguridad Privada" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=100_Codigo_de_Seguridad_Ciudadana&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/100_Codigo_de_Seguridad_Ciudadana.png" alt="Código de Seguridad Ciudadana" title="Código de Seguridad Ciudadana" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=173_Codigo_de_Derecho_de_la_Ciberseguridad&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/173_Codigo_de_Derecho_de_la_Ciberseguridad.png" alt="Código de Derecho de la Ciberseguridad" title="Código de Derecho de la Ciberseguridad" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=200_Codigo_de_Violencia_de_Genero_y_Domestica_&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/200_Codigo_de_Violencia_de_Genero_y_Domestica_.png" alt="Código de Violencia de Género y Doméstica " title="Código de Violencia de Género y Doméstica " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=174_Codigo_de_Proteccion_Civil&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/174_Codigo_de_Proteccion_Civil.png" alt="Código de Protección Civil" title="Código de Protección Civil" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=336_Armas_y_Explosivos&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/336_Armas_y_Explosivos.png" alt="Armas y Explosivos" title="Armas y Explosivos" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Derecho Tributario"></a>
+    <h4><span class="epigrafe">Derecho Tributario</span></h4>
+    <ul id="estante6">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=049_Codigo_de_Legislacion_Tributaria&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/049_Codigo_de_Legislacion_Tributaria.png" alt="Código de Legislación Tributaria" title="Código de Legislación Tributaria" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=030_Ley_General_Tributaria_y_sus_reglamentos&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/030_Ley_General_Tributaria_y_sus_reglamentos.png" alt="Ley General Tributaria y sus reglamentos" title="Ley General Tributaria y sus reglamentos" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=062_Impuesto_sobre_Sociedades&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/062_Impuesto_sobre_Sociedades.png" alt="Impuesto sobre Sociedades" title="Impuesto sobre Sociedades" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=064_Impuesto_sobre_la_Renta_de_las_Personas_Fisicas&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/064_Impuesto_sobre_la_Renta_de_las_Personas_Fisicas.png" alt="Impuesto sobre la Renta de las Personas Físicas" title="Impuesto sobre la Renta de las Personas Físicas" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=061_Impuesto_sobre_Sucesiones_y_Donaciones&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/061_Impuesto_sobre_Sucesiones_y_Donaciones.png" alt="Impuesto sobre Sucesiones y Donaciones" title="Impuesto sobre Sucesiones y Donaciones" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=057_Impuesto_sobre_el_Valor_Anadido&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/057_Impuesto_sobre_el_Valor_Anadido.png" alt="Impuesto sobre el Valor Añadido" title="Impuesto sobre el Valor Añadido" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=065_Impuesto_sobre_Transmisiones_Patrimoniales_y_Actos_Juridicos_Documentados&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/065_Impuesto_sobre_Transmisiones_Patrimoniales_y_Actos_Juridicos_Documentados.png" alt="Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados" title="Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=063_Impuestos_especiales&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/063_Impuestos_especiales.png" alt="Impuestos especiales" title="Impuestos especiales" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=066_Tasas_y_Precios_Publicos&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/066_Tasas_y_Precios_Publicos.png" alt="Tasas y Precios Públicos" title="Tasas y Precios Públicos" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=113_Codigo_de_Normativa_Catastral&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/113_Codigo_de_Normativa_Catastral.png" alt="Código de Normativa Catastral" title="Código de Normativa Catastral" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=288_Regimen_Fiscal_de_los_Trabajadores_Autonomos&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/288_Regimen_Fiscal_de_los_Trabajadores_Autonomos.png" alt="Régimen Fiscal de los Trabajadores Autónomos" title="Régimen Fiscal de los Trabajadores Autónomos" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=344_Normativa_internacional_para_evitar_la_doble_imposicion&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/344_Normativa_internacional_para_evitar_la_doble_imposicion.png" alt="Normativa internacional para evitar la doble imposición" title="Normativa internacional para evitar la doble imposición" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Derecho Financiero"></a>
+    <h4><span class="epigrafe">Derecho Financiero</span></h4>
+    <ul id="estante42">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=050_Codigo_de_Legislacion_Financiera&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/050_Codigo_de_Legislacion_Financiera.png" alt="Código de Legislación Financiera" title="Código de Legislación Financiera" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=163_Codigo_de_Normativa_Presupuestaria&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/163_Codigo_de_Normativa_Presupuestaria.png" alt="Código de Normativa Presupuestaria" title="Código de Normativa Presupuestaria" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=033_Ley_General_Presupuestaria_y_normas_complementarias&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/033_Ley_General_Presupuestaria_y_normas_complementarias.png" alt="Ley General Presupuestaria y normas complementarias" title="Ley General Presupuestaria y normas complementarias" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=112_Control_del_Gasto_de_la_Administracion_del_Estado&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/112_Control_del_Gasto_de_la_Administracion_del_Estado.png" alt="Control del Gasto de la Administración del Estado" title="Control del Gasto de la Administración del Estado" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=227_Control_del_Gasto_en_las_Haciendas_Locales&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/227_Control_del_Gasto_en_las_Haciendas_Locales.png" alt="Control del Gasto en las Haciendas Locales" title="Control del Gasto en las Haciendas Locales" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Derecho Civil"></a>
+    <h4><span class="epigrafe">Derecho Civil</span></h4>
+    <ul id="estante7">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=034_Codigo_Civil_y_legislacion_complementaria&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/034_Codigo_Civil_y_legislacion_complementaria.png" alt="Código Civil y legislación complementaria" title="Código Civil y legislación complementaria" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=185_Codigo_de_Responsabilidad_Civil_y_Seguro_en_la_Circulacion_de_Vehiculos_a_Motor&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/185_Codigo_de_Responsabilidad_Civil_y_Seguro_en_la_Circulacion_de_Vehiculos_a_Motor.png" alt="Código de Responsabilidad Civil y Seguro en la Circulación de Vehículos a Motor" title="Código de Responsabilidad Civil y Seguro en la Circulación de Vehículos a Motor" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=319_Codigo_de_Contratos&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/319_Codigo_de_Contratos.png" alt="Código de Contratos" title="Código de Contratos" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=048_Leyes_Civiles_Forales&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/048_Leyes_Civiles_Forales.png" alt="Leyes Civiles Forales" title="Leyes Civiles Forales" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=087_Codigo_de_Propiedad_Intelectual_&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/087_Codigo_de_Propiedad_Intelectual_.png" alt="Código de Propiedad Intelectual " title="Código de Propiedad Intelectual " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=015_Codigo_de_Propiedad_Horizontal&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/015_Codigo_de_Propiedad_Horizontal.png" alt="Código de Propiedad Horizontal" title="Código de Propiedad Horizontal" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=342_Codigo_de_Derecho_Nobiliario_y_Elenco_de_Titulos_del_Reino&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/342_Codigo_de_Derecho_Nobiliario_y_Elenco_de_Titulos_del_Reino.png" alt="Código de Derecho Nobiliario y Elenco de Títulos del Reino" title="Código de Derecho Nobiliario y Elenco de Títulos del Reino" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=129_Codigo_de_Legislacion_Registral_&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/129_Codigo_de_Legislacion_Registral_.png" alt="Código de Legislación Registral " title="Código de Legislación Registral " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=144_Codigo_de_Legislacion_Notarial&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/144_Codigo_de_Legislacion_Notarial.png" alt="Código de Legislación Notarial" title="Código de Legislación Notarial" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=261_Codigo_de_Derecho_Matrimonial&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/261_Codigo_de_Derecho_Matrimonial.png" alt="Código de Derecho Matrimonial" title="Código de Derecho Matrimonial" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=343_Codigo_de_Cooperacion_Juridica_Internacional_Civil_Espanola&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/343_Codigo_de_Cooperacion_Juridica_Internacional_Civil_Espanola.png" alt="Código de Cooperación Jurídica Internacional Civil Española" title="Código de Cooperación Jurídica Internacional Civil Española" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Derecho Penal"></a>
+    <h4><span class="epigrafe">Derecho Penal</span></h4>
+    <ul id="estante4">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=038_Codigo_Penal_y_legislacion_complementaria&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/038_Codigo_Penal_y_legislacion_complementaria.png" alt="Código Penal y legislación complementaria" title="Código Penal y legislación complementaria" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=054_Codigo_Penitenciario&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/054_Codigo_Penitenciario.png" alt="Código Penitenciario" title="Código Penitenciario" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Derecho Mercantil"></a>
+    <h4><span class="epigrafe">Derecho Mercantil</span></h4>
+    <ul id="estante8">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=035_Codigo_de_Comercio_y_legislacion_complementaria&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/035_Codigo_de_Comercio_y_legislacion_complementaria.png" alt="Código de Comercio y legislación complementaria" title="Código de Comercio y legislación complementaria" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=097_Codigo_de_Comercio_Interior&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/097_Codigo_de_Comercio_Interior.png" alt="Código de Comercio Interior" title="Código de Comercio Interior" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=083_Codigo_de_Legislacion_Concursal&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/083_Codigo_de_Legislacion_Concursal.png" alt="Código de Legislación Concursal" title="Código de Legislación Concursal" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=067_Propiedad_Industrial&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/067_Propiedad_Industrial.png" alt="Propiedad Industrial" title="Propiedad Industrial" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=216_Codigo_de_Derecho_de_la_Competencia&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/216_Codigo_de_Derecho_de_la_Competencia.png" alt="Código de Derecho de la Competencia" title="Código de Derecho de la Competencia" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=248_Codigo_de_Derecho_de_la_Publicidad&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/248_Codigo_de_Derecho_de_la_Publicidad.png" alt="Código de Derecho de la Publicidad" title="Código de Derecho de la Publicidad" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=297_Codigo_de_la_Moda&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/297_Codigo_de_la_Moda.png" alt="Código de la Moda" title="Código de la Moda" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=318_Codigo_del_Consejero&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/318_Codigo_del_Consejero.png" alt="Código del Consejero" title="Código del Consejero" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Sociedades Mercantiles"></a>
+    <h4><span class="epigrafe">Sociedades Mercantiles</span></h4>
+    <ul id="estante37">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=106_Codigo_de_Derecho_de_Sociedades&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/106_Codigo_de_Derecho_de_Sociedades.png" alt="Código de Derecho de Sociedades" title="Código de Derecho de Sociedades" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=312_Codigo_de_Economia_Colaborativa&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/312_Codigo_de_Economia_Colaborativa.png" alt="Código de Economía Colaborativa" title="Código de Economía Colaborativa" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=217_Legislacion_de_la_Empresa_Familiar&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/217_Legislacion_de_la_Empresa_Familiar.png" alt="Legislación de la Empresa Familiar" title="Legislación de la Empresa Familiar" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=141_Codigo_de_Financiacion_Empresarial&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/141_Codigo_de_Financiacion_Empresarial.png" alt="Código de Financiación Empresarial" title="Código de Financiación Empresarial" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=213_Codigo_de_Gobierno_Corporativo&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/213_Codigo_de_Gobierno_Corporativo.png" alt="Código de Gobierno Corporativo" title="Código de Gobierno Corporativo" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=190_Codigo_de_Segunda_Oportunidad&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/190_Codigo_de_Segunda_Oportunidad.png" alt="Código de Segunda Oportunidad" title="Código de Segunda Oportunidad" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=147_Codigo_de_Inversiones_Extranjeras_en_Espana&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/147_Codigo_de_Inversiones_Extranjeras_en_Espana.png" alt="Código de Inversiones Extranjeras en España" title="Código de Inversiones Extranjeras en España" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Mercados, Entidades y Operaciones Financieros"></a>
+    <h4><span class="epigrafe">Mercados, Entidades y Operaciones Financieros</span></h4>
+    <ul id="estante36">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=041_Codigo_del_Mercado_Bancario&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/041_Codigo_del_Mercado_Bancario.png" alt="Código del Mercado Bancario" title="Código del Mercado Bancario" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=045_Codigo_del_Mercado_del_Seguro&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/045_Codigo_del_Mercado_del_Seguro.png" alt="Código del Mercado del Seguro" title="Código del Mercado del Seguro" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=076_Codigo_del_Mercado_de_Valores&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/076_Codigo_del_Mercado_de_Valores.png" alt="Código del Mercado de Valores" title="Código del Mercado de Valores" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=109_Codigo_de_Titulos_y_Valores&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/109_Codigo_de_Titulos_y_Valores.png" alt="Código de Títulos y Valores" title="Código de Títulos y Valores" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=214_Codigo_de_Cumplimiento_Normativo_en_Entidades_Financieras&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/214_Codigo_de_Cumplimiento_Normativo_en_Entidades_Financieras.png" alt="Código de Cumplimiento Normativo en Entidades Financieras" title="Código de Cumplimiento Normativo en Entidades Financieras" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=215_Codigo_de_la_Ordenacion_de_los_Mercados_Financieros&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/215_Codigo_de_la_Ordenacion_de_los_Mercados_Financieros.png" alt="Código de la Ordenación de los Mercados Financieros" title="Código de la Ordenación de los Mercados Financieros" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=242_Codigo_de_las_Entidades_de_los_Mercados_Financieros&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/242_Codigo_de_las_Entidades_de_los_Mercados_Financieros.png" alt="Código de las Entidades de los Mercados Financieros" title="Código de las Entidades de los Mercados Financieros" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=243_Codigo_de_la_Operativa_de_los_Mercados_Financieros&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/243_Codigo_de_la_Operativa_de_los_Mercados_Financieros.png" alt="Código de la Operativa de los Mercados Financieros" title="Código de la Operativa de los Mercados Financieros" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=244_Codigo_de_Fiscalidad_de_los_Mercados_Financieros&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/244_Codigo_de_Fiscalidad_de_los_Mercados_Financieros.png" alt="Código de Fiscalidad de los Mercados Financieros" title="Código de Fiscalidad de los Mercados Financieros" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=245_Codigo_de_Normativa_Complementaria_de_los_Mercados_Financieros&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/245_Codigo_de_Normativa_Complementaria_de_los_Mercados_Financieros.png" alt="Código de Normativa Complementaria de los Mercados Financieros" title="Código de Normativa Complementaria de los Mercados Financieros" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Auditoría y Contabilidad"></a>
+    <h4><span class="epigrafe">Auditoría y Contabilidad</span></h4>
+    <ul id="estante16">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=090_Codigo_de_Auditoria_de_Cuentas&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/090_Codigo_de_Auditoria_de_Cuentas.png" alt="Código de Auditoría de Cuentas" title="Código de Auditoría de Cuentas" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=089_Codigo_de_Contabilidad_Financiera_y_Sociedades&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/089_Codigo_de_Contabilidad_Financiera_y_Sociedades.png" alt="Código de Contabilidad Financiera y Sociedades" title="Código de Contabilidad Financiera y Sociedades" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Legislación Social"></a>
+    <h4><span class="epigrafe">Legislación Social</span></h4>
+    <ul id="estante5">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=039_Codigo_de_Legislacion_Social&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/039_Codigo_de_Legislacion_Social.png" alt="Código de Legislación Social" title="Código de Legislación Social" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=071_Cooperativas_Sociedades_Laborales_y_Trabajador_Autonomo&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/071_Cooperativas_Sociedades_Laborales_y_Trabajador_Autonomo.png" alt="Cooperativas, Sociedades Laborales y Trabajador Autónomo" title="Cooperativas, Sociedades Laborales y Trabajador Autónomo" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=093_Codigo_Laboral_y_de_la_Seguridad_Social_&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/093_Codigo_Laboral_y_de_la_Seguridad_Social_.png" alt="Código Laboral y de la Seguridad Social " title="Código Laboral y de la Seguridad Social " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=037_Prevencion_de_riesgos_laborales&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/037_Prevencion_de_riesgos_laborales.png" alt="Prevención de riesgos laborales" title="Prevención de riesgos laborales" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=267_Trabajo_Autonomo&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/267_Trabajo_Autonomo.png" alt="Trabajo Autónomo" title="Trabajo Autónomo" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=328_Codigo_de_Derecho_Sindical&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/328_Codigo_de_Derecho_Sindical.png" alt="Código de Derecho Sindical" title="Código de Derecho Sindical" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_nuevo.png" class="etiqueta" alt="novedad" title="novedad"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Derecho Procesal"></a>
+    <h4><span class="epigrafe">Derecho Procesal</span></h4>
+    <ul id="estante9">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=040_Codigo_de_Legislacion_Procesal&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/040_Codigo_de_Legislacion_Procesal.png" alt="Código de Legislación Procesal" title="Código de Legislación Procesal" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=332_Codigo_de_Derecho_Jurisdiccional&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/332_Codigo_de_Derecho_Jurisdiccional.png" alt="Código de Derecho Jurisdiccional" title="Código de Derecho Jurisdiccional" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=333_Codigo_Procesal_Civil&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/333_Codigo_Procesal_Civil.png" alt="Código Procesal Civil" title="Código Procesal Civil" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=334_Codigo_Procesal_Penal&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/334_Codigo_Procesal_Penal.png" alt="Código Procesal Penal" title="Código Procesal Penal" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=317_Codigo_Procesal_Administrativo&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/317_Codigo_Procesal_Administrativo.png" alt="Código Procesal Administrativo" title="Código Procesal Administrativo" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=316_Codigo_Procesal_Laboral&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/316_Codigo_Procesal_Laboral.png" alt="Código Procesal Laboral" title="Código Procesal Laboral" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=162_Codigo_de_Subastas_Electronicas&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/162_Codigo_de_Subastas_Electronicas.png" alt="Código de Subastas Electrónicas" title="Código de Subastas Electrónicas" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Educación"></a>
+    <h4><span class="epigrafe">Educación</span></h4>
+    <ul id="estante14">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=053_Codigo_de_leyes_educativas&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/053_Codigo_de_leyes_educativas.png" alt="Código de leyes educativas" title="Código de leyes educativas" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=195_Codigo_de_Educacion__Infantil_y_Primaria&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/195_Codigo_de_Educacion__Infantil_y_Primaria.png" alt="Código de Educación  Infantil y Primaria" title="Código de Educación  Infantil y Primaria" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=206_Codigo_de_Educacion_Secundaria_y__Bachillerato&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/206_Codigo_de_Educacion_Secundaria_y__Bachillerato.png" alt="Código de Educación Secundaria y  Bachillerato" title="Código de Educación Secundaria y  Bachillerato" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=133_Codigo_de_Universidades&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/133_Codigo_de_Universidades.png" alt="Código de Universidades" title="Código de Universidades" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=194_Codigo_de_Becas_y_Ayudas_al_Estudio&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/194_Codigo_de_Becas_y_Ayudas_al_Estudio.png" alt="Código de Becas y Ayudas al Estudio" title="Código de Becas y Ayudas al Estudio" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=166_Codigo_de_Evaluacion_y_Acreditacion_del_Profesorado_Universitario&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/166_Codigo_de_Evaluacion_y_Acreditacion_del_Profesorado_Universitario.png" alt="Código de Evaluación y Acreditación del Profesorado Universitario" title="Código de Evaluación y Acreditación del Profesorado Universitario" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=165_Codigo_de_Formacion_Profesional&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/165_Codigo_de_Formacion_Profesional.png" alt="Código de Formación Profesional" title="Código de Formación Profesional" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=211_Codigo_de_Personal_Educativo_Centros_Docentes&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/211_Codigo_de_Personal_Educativo_Centros_Docentes.png" alt="Código de Personal Educativo (Centros Docentes)" title="Código de Personal Educativo (Centros Docentes)" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Sanidad y Farmacia"></a>
+    <h4><span class="epigrafe">Sanidad y Farmacia</span></h4>
+    <ul id="estante13">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=084_Codigo_Sanitario&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/084_Codigo_Sanitario.png" alt="Código Sanitario" title="Código Sanitario" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=212_Codigo_Sanitario_Normativa_Autonomica&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/212_Codigo_Sanitario_Normativa_Autonomica.png" alt="Código Sanitario Normativa Autonómica" title="Código Sanitario Normativa Autonómica" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=088_Codigo_del_Sistema_Sanitario&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/088_Codigo_del_Sistema_Sanitario.png" alt="Código del Sistema Sanitario" title="Código del Sistema Sanitario" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=224_Codigo_del_Sistema_Sanitario_Normativa_Autonomica&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/224_Codigo_del_Sistema_Sanitario_Normativa_Autonomica.png" alt="Código del Sistema Sanitario Normativa Autonómica" title="Código del Sistema Sanitario Normativa Autonómica" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=115_Codigo_de_Profesionales_Sanitarios&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/115_Codigo_de_Profesionales_Sanitarios.png" alt="Código de Profesionales Sanitarios" title="Código de Profesionales Sanitarios" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=193_Codigo_de_Profesionales_Sanitarios_Normativa_Autonomica&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/193_Codigo_de_Profesionales_Sanitarios_Normativa_Autonomica.png" alt="Código de Profesionales Sanitarios Normativa Autonómica" title="Código de Profesionales Sanitarios Normativa Autonómica" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=146_Codigo_del_Control_Sanitario&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/146_Codigo_del_Control_Sanitario.png" alt="Código del Control Sanitario" title="Código del Control Sanitario" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=225_Codigo_del_Control_Sanitario_Normativa_Autonomica&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/225_Codigo_del_Control_Sanitario_Normativa_Autonomica.png" alt="Código del Control Sanitario Normativa Autonómica" title="Código del Control Sanitario Normativa Autonómica" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=081_Codigo_de_Derecho_Farmaceutico&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/081_Codigo_de_Derecho_Farmaceutico.png" alt="Código de Derecho Farmacéutico" title="Código de Derecho Farmacéutico" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=352_Codigo_de_Vigilancia_Epidemiologica&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/352_Codigo_de_Vigilancia_Epidemiologica.png" alt="Código de Vigilancia Epidemiológica" title="Código de Vigilancia Epidemiológica" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Deporte"></a>
+    <h4><span class="epigrafe">Deporte</span></h4>
+    <ul id="estante39">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=103_Codigo_de_Derecho_Deportivo_&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/103_Codigo_de_Derecho_Deportivo_.png" alt="Código de Derecho Deportivo " title="Código de Derecho Deportivo " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Cultura"></a>
+    <h4><span class="epigrafe">Cultura</span></h4>
+    <ul id="estante15">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=181_Codigo_de_las_Artes_Escenicas_y_de_la_Musica&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/181_Codigo_de_las_Artes_Escenicas_y_de_la_Musica.png" alt="Código de las Artes Escénicas y de la Música" title="Código de las Artes Escénicas y de la Música" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=175_Patrimonio_Cultural_de_las_Administraciones_Publicas&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/175_Patrimonio_Cultural_de_las_Administraciones_Publicas.png" alt="Patrimonio Cultural de las Administraciones Públicas" title="Patrimonio Cultural de las Administraciones Públicas" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=177_Codigo_de_Museos__&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/177_Codigo_de_Museos__.png" alt="Código de Museos  " title="Código de Museos  " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=092_Codigo_de_Archivos_y_Patrimonio_Documental&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/092_Codigo_de_Archivos_y_Patrimonio_Documental.png" alt="Código de Archivos y Patrimonio Documental" title="Código de Archivos y Patrimonio Documental" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=024_Codigo_de_Legislacion_Bibliotecaria&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/024_Codigo_de_Legislacion_Bibliotecaria.png" alt="Código de Legislación Bibliotecaria" title="Código de Legislación Bibliotecaria" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=134_Codigo_de_Legislacion_Bibliotecaria_Autonomica&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/134_Codigo_de_Legislacion_Bibliotecaria_Autonomica.png" alt="Código de Legislación Bibliotecaria Autonómica" title="Código de Legislación Bibliotecaria Autonómica" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=220_Codigo_de_Cinematografia_y_Artes_Audiovisuales&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/220_Codigo_de_Cinematografia_y_Artes_Audiovisuales.png" alt="Código de Cinematografía y Artes Audiovisuales" title="Código de Cinematografía y Artes Audiovisuales" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Energía"></a>
+    <h4><span class="epigrafe">Energía</span></h4>
+    <ul id="estante33">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=014_Codigo_de_la_Energia_Electrica&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/014_Codigo_de_la_Energia_Electrica.png" alt="Código de la Energía Eléctrica" title="Código de la Energía Eléctrica" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=130_Codigo_del_Gas&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/130_Codigo_del_Gas.png" alt="Código del Gas" title="Código del Gas" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=152_Codigo_del_Petroleo&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/152_Codigo_del_Petroleo.png" alt="Código del Petróleo" title="Código del Petróleo" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=219_Codigo_de_Seguridad_Nuclear&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/219_Codigo_de_Seguridad_Nuclear.png" alt="Código de Seguridad Nuclear" title="Código de Seguridad Nuclear" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=326_Reglamento_electrotecnico_para_baja_tension_e_ITC&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/326_Reglamento_electrotecnico_para_baja_tension_e_ITC.png" alt="Reglamento electrotécnico para baja tensión e ITC" title="Reglamento electrotécnico para baja tensión e ITC" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Agricultura y Alimentación"></a>
+    <h4><span class="epigrafe">Agricultura y Alimentación</span></h4>
+    <ul id="estante35">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=287_Codigo_de_Derecho_Agrario_I_Marco_institucional_de_la_agricultura&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/287_Codigo_de_Derecho_Agrario_I_Marco_institucional_de_la_agricultura.png" alt="Código de Derecho Agrario (I) Marco institucional de la agricultura" title="Código de Derecho Agrario (I) Marco institucional de la agricultura" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=296_Codigo_de_Derecho_Agrario_II_Empresario_agrario&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/296_Codigo_de_Derecho_Agrario_II_Empresario_agrario.png" alt="Código de Derecho Agrario (II) Empresario agrario" title="Código de Derecho Agrario (II) Empresario agrario" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=276_Codigo_de_Derecho_Agrario_III_Propiedad_y_explotaciones_agrarias&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/276_Codigo_de_Derecho_Agrario_III_Propiedad_y_explotaciones_agrarias.png" alt="Código de Derecho Agrario (III) Propiedad y explotaciones agrarias" title="Código de Derecho Agrario (III) Propiedad y explotaciones agrarias" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=192_Codigo_de_Derecho_Agrario_IV_Variedades_vegetales_&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/192_Codigo_de_Derecho_Agrario_IV_Variedades_vegetales_.png" alt="Código de Derecho Agrario (IV) Variedades vegetales " title="Código de Derecho Agrario (IV) Variedades vegetales " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=284_Codigo_de_Derecho_Agrario_V_Sanidad_vegetal_y_productos_fitosanitarios_&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/284_Codigo_de_Derecho_Agrario_V_Sanidad_vegetal_y_productos_fitosanitarios_.png" alt="Código de Derecho Agrario (V) Sanidad vegetal y productos fitosanitarios " title="Código de Derecho Agrario (V) Sanidad vegetal y productos fitosanitarios " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=293_Codigo_de_Derecho_Agrario_VI_Animales_y_explotaciones_ganaderas&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/293_Codigo_de_Derecho_Agrario_VI_Animales_y_explotaciones_ganaderas.png" alt="Código de Derecho Agrario (VI) Animales y explotaciones ganaderas" title="Código de Derecho Agrario (VI) Animales y explotaciones ganaderas" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=274_Codigo_de_Derecho_Agrario_VII_Operaciones_con_el_ganado&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/274_Codigo_de_Derecho_Agrario_VII_Operaciones_con_el_ganado.png" alt="Código de Derecho Agrario (VII) Operaciones con el ganado" title="Código de Derecho Agrario (VII) Operaciones con el ganado" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=294_Codigo_de_Derecho_Agrario_VIII_Enfermedades_del_ganado_y_medicamentos&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/294_Codigo_de_Derecho_Agrario_VIII_Enfermedades_del_ganado_y_medicamentos.png" alt="Código de Derecho Agrario (VIII) Enfermedades del ganado y medicamentos" title="Código de Derecho Agrario (VIII) Enfermedades del ganado y medicamentos" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=277_Codigo_de_Derecho_Agrario_IX_Sistema_agroindustrial_y_calidad_de_los_productos_agrarios&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/277_Codigo_de_Derecho_Agrario_IX_Sistema_agroindustrial_y_calidad_de_los_productos_agrarios.png" alt="Código de Derecho Agrario (IX) Sistema agroindustrial y calidad de los productos agrarios" title="Código de Derecho Agrario (IX) Sistema agroindustrial y calidad de los productos agrarios" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=114_Codigo_de_Derecho_Agrario_X_Desarrollo_rural_&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/114_Codigo_de_Derecho_Agrario_X_Desarrollo_rural_.png" alt="Código de Derecho Agrario (X) Desarrollo rural " title="Código de Derecho Agrario (X) Desarrollo rural " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=285_Codigo_de_Derecho_Agrario_XI_Comunidades_Autonomas_&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/285_Codigo_de_Derecho_Agrario_XI_Comunidades_Autonomas_.png" alt="Código de Derecho Agrario (XI) Comunidades Autónomas " title="Código de Derecho Agrario (XI) Comunidades Autónomas " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=226_Derecho_Agroalimentario_Agroalimentacion_y_Normativa_de_Desarrollo&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/226_Derecho_Agroalimentario_Agroalimentacion_y_Normativa_de_Desarrollo.png" alt="Derecho Agroalimentario (Agroalimentación y Normativa de Desarrollo)" title="Derecho Agroalimentario (Agroalimentación y Normativa de Desarrollo)" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=228_Derecho_Agroalimentario_Operaciones_en_la_Industria_Agroalimentaria&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/228_Derecho_Agroalimentario_Operaciones_en_la_Industria_Agroalimentaria.png" alt="Derecho Agroalimentario (Operaciones en la Industria Agroalimentaria)" title="Derecho Agroalimentario (Operaciones en la Industria Agroalimentaria)" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=247_Derecho_Agroalimentario_Contexto_Sectorial_de_la_Industria_Agroalimentaria&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/247_Derecho_Agroalimentario_Contexto_Sectorial_de_la_Industria_Agroalimentaria.png" alt="Derecho Agroalimentario (Contexto Sectorial de la Industria Agroalimentaria)" title="Derecho Agroalimentario (Contexto Sectorial de la Industria Agroalimentaria)" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=191_Codigo_del_Sector_Hortofruticola&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/191_Codigo_del_Sector_Hortofruticola.png" alt="Código del Sector Hortofrutícola" title="Código del Sector Hortofrutícola" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=340_Codigo_del_Sector_Hortofruticola_Frutos_Rojos&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/340_Codigo_del_Sector_Hortofruticola_Frutos_Rojos.png" alt="Código del Sector Hortofrutícola: Frutos Rojos" title="Código del Sector Hortofrutícola: Frutos Rojos" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=218_Codigo_del_Sector_Vitivinicola&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/218_Codigo_del_Sector_Vitivinicola.png" alt="Código del Sector Vitivinícola" title="Código del Sector Vitivinícola" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=265_Codigo_de_la_Cerveza&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/265_Codigo_de_la_Cerveza.png" alt="Código de la Cerveza" title="Código de la Cerveza" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=263_Codigo_de_la_Sidra&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/263_Codigo_de_la_Sidra.png" alt="Código de la Sidra" title="Código de la Sidra" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=197_Codigo_del_Sector_de_Productos_Lacteos&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/197_Codigo_del_Sector_de_Productos_Lacteos.png" alt="Código del Sector de Productos Lácteos" title="Código del Sector de Productos Lácteos" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=290_Codigo_del_Sector_del_Aceite_&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/290_Codigo_del_Sector_del_Aceite_.png" alt="Código del Sector del Aceite " title="Código del Sector del Aceite " width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=204_Codigo_de_Proteccion_y_Bienestar_Animal&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/204_Codigo_de_Proteccion_y_Bienestar_Animal.png" alt="Código de Protección y Bienestar Animal" title="Código de Protección y Bienestar Animal" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=210_Codigo_de_Animales_de_Compania&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/210_Codigo_de_Animales_de_Compania.png" alt="Código de Animales de Compañía" title="Código de Animales de Compañía" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=095_Codigo_de_Caza&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/095_Codigo_de_Caza.png" alt="Código de Caza" title="Código de Caza" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Comunidades Autónomas"></a>
+    <h4><span class="epigrafe">Comunidades Autónomas</span></h4>
+    <ul id="estante3">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=150_Codigo_de_Leyes_Civiles_de_Cataluna&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/150_Codigo_de_Leyes_Civiles_de_Cataluna.png" alt="Código de Leyes Civiles de Cataluña" title="Código de Leyes Civiles de Cataluña" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=167_Codigo_de_Derecho_Publico_de_Cataluna__Parte_general&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/167_Codigo_de_Derecho_Publico_de_Cataluna__Parte_general.png" alt="Código de Derecho Público de Cataluña  (Parte general)" title="Código de Derecho Público de Cataluña  (Parte general)" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=201_Codigo_de_Derecho_Publico_de_Cataluna__Parte_especial&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/201_Codigo_de_Derecho_Publico_de_Cataluna__Parte_especial.png" alt="Código de Derecho Público de Cataluña  (Parte especial)" title="Código de Derecho Público de Cataluña  (Parte especial)" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=028_Codigo_del_Principado_de_Asturias&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/028_Codigo_del_Principado_de_Asturias.png" alt="Código del Principado de Asturias" title="Código del Principado de Asturias" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=347_Codigo_de_la_Region_de_Murcia&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/347_Codigo_de_la_Region_de_Murcia.png" alt="Código de la Región de Murcia" title="Código de la Región de Murcia" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=208_Codigo_de_la_Comunidad_de_Madrid&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/208_Codigo_de_la_Comunidad_de_Madrid.png" alt="Código de la Comunidad de Madrid" title="Código de la Comunidad de Madrid" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=329_Normativa_del_Ayuntamiento_de_Madrid&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/329_Normativa_del_Ayuntamiento_de_Madrid.png" alt="Normativa del Ayuntamiento de Madrid" title="Normativa del Ayuntamiento de Madrid" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Derecho Urbanístico"></a>
+    <h4><span class="epigrafe">Derecho Urbanístico</span></h4>
+    <ul id="estante10">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=069_Codigo_de_Derecho_Urbanistico_estatal&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/069_Codigo_de_Derecho_Urbanistico_estatal.png" alt="Código de Derecho Urbanístico estatal" title="Código de Derecho Urbanístico estatal" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=074_Codigo_de_Urbanismo_del_Pais_Vasco&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/074_Codigo_de_Urbanismo_del_Pais_Vasco.png" alt="Código de Urbanismo del País Vasco" title="Código de Urbanismo del País Vasco" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=079_Codigo_de_Urbanismo_de_Cataluna&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/079_Codigo_de_Urbanismo_de_Cataluna.png" alt="Código de Urbanismo de Cataluña" title="Código de Urbanismo de Cataluña" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=072_Codigo_de_Urbanismo_de_Galicia&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/072_Codigo_de_Urbanismo_de_Galicia.png" alt="Código de Urbanismo de Galicia" title="Código de Urbanismo de Galicia" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=060_Codigo_de_Urbanismo_de_Andalucia&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/060_Codigo_de_Urbanismo_de_Andalucia.png" alt="Código de Urbanismo de Andalucía" title="Código de Urbanismo de Andalucía" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=026_Codigo_de_Urbanismo_del_Principado_de_Asturias&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/026_Codigo_de_Urbanismo_del_Principado_de_Asturias.png" alt="Código de Urbanismo del Principado de Asturias" title="Código de Urbanismo del Principado de Asturias" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=073_Codigo_de_Urbanismo_de_Cantabria&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/073_Codigo_de_Urbanismo_de_Cantabria.png" alt="Código de Urbanismo de Cantabria" title="Código de Urbanismo de Cantabria" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=056_Codigo_de_Urbanismo_de_La_Rioja&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/056_Codigo_de_Urbanismo_de_La_Rioja.png" alt="Código de Urbanismo de La Rioja" title="Código de Urbanismo de La Rioja" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=051_Codigo_de_Urbanismo_de_la_Region__de_Murcia&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/051_Codigo_de_Urbanismo_de_la_Region__de_Murcia.png" alt="Código de Urbanismo de la Región  de Murcia" title="Código de Urbanismo de la Región  de Murcia" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=013_Codigo_de_Urbanismo_de_la_Comunidad_Valenciana&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/013_Codigo_de_Urbanismo_de_la_Comunidad_Valenciana.png" alt="Código de Urbanismo de la Comunidad Valenciana" title="Código de Urbanismo de la Comunidad Valenciana" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=047_Codigo_de_Urbanismo__de_Aragon&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/047_Codigo_de_Urbanismo__de_Aragon.png" alt="Código de Urbanismo  de Aragón" title="Código de Urbanismo  de Aragón" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=068_Codigo_de_Urbanismo_de_Castilla-La_Mancha&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/068_Codigo_de_Urbanismo_de_Castilla-La_Mancha.png" alt="Código de Urbanismo de Castilla-La Mancha" title="Código de Urbanismo de Castilla-La Mancha" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=078_Codigo_de_Urbanismo_de_las_Islas_Canarias&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/078_Codigo_de_Urbanismo_de_las_Islas_Canarias.png" alt="Código de Urbanismo de las Islas Canarias" title="Código de Urbanismo de las Islas Canarias" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=077_Codigo_de_Urbanismo_de_Navarra&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/077_Codigo_de_Urbanismo_de_Navarra.png" alt="Código de Urbanismo de Navarra" title="Código de Urbanismo de Navarra" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=052_Codigo_de_Urbanismo_de_Extremadura&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/052_Codigo_de_Urbanismo_de_Extremadura.png" alt="Código de Urbanismo de Extremadura" title="Código de Urbanismo de Extremadura" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=027_Codigo_de_Urbanismo_de_las_Islas_Baleares&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/027_Codigo_de_Urbanismo_de_las_Islas_Baleares.png" alt="Código de Urbanismo de las Islas Baleares" title="Código de Urbanismo de las Islas Baleares" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=080_Codigo_de_Urbanismo_de_la_Comunidad_de_Madrid&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/080_Codigo_de_Urbanismo_de_la_Comunidad_de_Madrid.png" alt="Código de Urbanismo de la Comunidad de Madrid" title="Código de Urbanismo de la Comunidad de Madrid" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=075_Codigo_de_Urbanismo_de_Castilla_y_Leon&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/075_Codigo_de_Urbanismo_de_Castilla_y_Leon.png" alt="Código de Urbanismo de Castilla y León" title="Código de Urbanismo de Castilla y León" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Vivienda"></a>
+    <h4><span class="epigrafe">Vivienda</span></h4>
+    <ul id="estante17">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=127_Codigo_de_la_Vivienda_del_Estado&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/127_Codigo_de_la_Vivienda_del_Estado.png" alt="Código de la Vivienda del Estado" title="Código de la Vivienda del Estado" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=183_Codigo_de_la_Vivienda_del_Pais_Vasco&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/183_Codigo_de_la_Vivienda_del_Pais_Vasco.png" alt="Código de la Vivienda del País Vasco" title="Código de la Vivienda del País Vasco" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=161_Codigo_de_la_Vivienda_de_Cataluna&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/161_Codigo_de_la_Vivienda_de_Cataluna.png" alt="Código de la Vivienda de Cataluña" title="Código de la Vivienda de Cataluña" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=171_Codigo_de_la_Vivienda__de_Galicia&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/171_Codigo_de_la_Vivienda__de_Galicia.png" alt="Código de la Vivienda  de Galicia" title="Código de la Vivienda  de Galicia" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=155_Codigo_de_la_Vivienda_de_Andalucia&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/155_Codigo_de_la_Vivienda_de_Andalucia.png" alt="Código de la Vivienda de Andalucía" title="Código de la Vivienda de Andalucía" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=182_Codigo_de_la_Vivienda__del_Principado__de_Asturias&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/182_Codigo_de_la_Vivienda__del_Principado__de_Asturias.png" alt="Código de la Vivienda  del Principado  de Asturias" title="Código de la Vivienda  del Principado  de Asturias" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=207_Codigo_de_la_Vivienda_de_Cantabria&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/207_Codigo_de_la_Vivienda_de_Cantabria.png" alt="Código de la Vivienda de Cantabria" title="Código de la Vivienda de Cantabria" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=198_Codigo_de_la_Vivienda__de_La_Rioja&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/198_Codigo_de_la_Vivienda__de_La_Rioja.png" alt="Código de la Vivienda  de La Rioja" title="Código de la Vivienda  de La Rioja" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=189_Codigo_de_la_Vivienda__de_la_Region__de_Murcia&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/189_Codigo_de_la_Vivienda__de_la_Region__de_Murcia.png" alt="Código de la Vivienda  de la Región  de Murcia" title="Código de la Vivienda  de la Región  de Murcia" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=172_Codigo_de_la_Vivienda_de_la_Comunidad__Valenciana&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/172_Codigo_de_la_Vivienda_de_la_Comunidad__Valenciana.png" alt="Código de la Vivienda de la Comunidad  Valenciana" title="Código de la Vivienda de la Comunidad  Valenciana" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=188_Codigo_de_la_Vivienda_de_Aragon&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/188_Codigo_de_la_Vivienda_de_Aragon.png" alt="Código de la Vivienda de Aragón" title="Código de la Vivienda de Aragón" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=202_Codigo_de_la_Vivienda__de_Castilla-La_Mancha&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/202_Codigo_de_la_Vivienda__de_Castilla-La_Mancha.png" alt="Código de la Vivienda  de Castilla-La Mancha" title="Código de la Vivienda  de Castilla-La Mancha" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=187_Codigo_de_la_Vivienda__de_las_Islas__Canarias&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/187_Codigo_de_la_Vivienda__de_las_Islas__Canarias.png" alt="Código de la Vivienda  de las Islas  Canarias" title="Código de la Vivienda  de las Islas  Canarias" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=205_Codigo_de_la_Vivienda_de_Navarra&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/205_Codigo_de_la_Vivienda_de_Navarra.png" alt="Código de la Vivienda de Navarra" title="Código de la Vivienda de Navarra" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=203_Codigo_de_la_Vivienda__de_Extremadura&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/203_Codigo_de_la_Vivienda__de_Extremadura.png" alt="Código de la Vivienda  de Extremadura" title="Código de la Vivienda  de Extremadura" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=199_Codigo_de_la_Vivienda__de_las_Islas_Baleares&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/199_Codigo_de_la_Vivienda__de_las_Islas_Baleares.png" alt="Código de la Vivienda  de las Islas Baleares" title="Código de la Vivienda  de las Islas Baleares" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=178_Codigo_de_la_Vivienda_de_la_Comunidad_de_Madrid&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/178_Codigo_de_la_Vivienda_de_la_Comunidad_de_Madrid.png" alt="Código de la Vivienda de la Comunidad de Madrid" title="Código de la Vivienda de la Comunidad de Madrid" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=142_Codigo_de_la_Vivienda__de_Castilla_y_Leon&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/142_Codigo_de_la_Vivienda__de_Castilla_y_Leon.png" alt="Código de la Vivienda  de Castilla y León" title="Código de la Vivienda  de Castilla y León" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p>  <div class="estante">
+    <a id="Medio Ambiente"></a>
+    <h4><span class="epigrafe">Medio Ambiente</span></h4>
+    <ul id="estante18">
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=145_Codigo_de_Naturaleza_y_Biodiversidad&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/145_Codigo_de_Naturaleza_y_Biodiversidad.png" alt="Código de Naturaleza y Biodiversidad" title="Código de Naturaleza y Biodiversidad" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=148_Codigo_de__Parques_Nacionales&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/148_Codigo_de__Parques_Nacionales.png" alt="Código de  Parques Nacionales" title="Código de  Parques Nacionales" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=123_Codigo_de_Atmosfera__y_Cambio_Climatico&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/123_Codigo_de_Atmosfera__y_Cambio_Climatico.png" alt="Código de Atmósfera  y Cambio Climático" title="Código de Atmósfera  y Cambio Climático" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=184_Codigo_del_Ruido&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/184_Codigo_del_Ruido.png" alt="Código del Ruido" title="Código del Ruido" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=111_Codigo_de_Evaluacion_y_Control_Ambiental&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/111_Codigo_de_Evaluacion_y_Control_Ambiental.png" alt="Código de Evaluación y Control Ambiental" title="Código de Evaluación y Control Ambiental" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=156_Codigo_de_Residuos__y_Sustancias_Peligrosas&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/156_Codigo_de_Residuos__y_Sustancias_Peligrosas.png" alt="Código de Residuos  y Sustancias Peligrosas" title="Código de Residuos  y Sustancias Peligrosas" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=335_Codigo_de_Derecho_de_la_Sostenibilidad&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/335_Codigo_de_Derecho_de_la_Sostenibilidad.png" alt="Código de Derecho de la Sostenibilidad" title="Código de Derecho de la Sostenibilidad" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=032_Codigo_de_Aguas_Normativa_Estatal&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/032_Codigo_de_Aguas_Normativa_Estatal.png" alt="Código de Aguas Normativa Estatal" title="Código de Aguas Normativa Estatal" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=139_Codigo_de_Aguas_Normativa_Autonomica&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/139_Codigo_de_Aguas_Normativa_Autonomica.png" alt="Código de Aguas Normativa Autonómica" title="Código de Aguas Normativa Autonómica" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_revision.png" class="etiqueta" alt="en revisi&oacute;n" title="en revisi&oacute;n"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=268_Codigo_Forestal_1_Normas_Generales_Montes_y_Vias_Pecuarias&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/268_Codigo_Forestal_1_Normas_Generales_Montes_y_Vias_Pecuarias.png" alt="Código Forestal 1: Normas Generales Montes y Vías Pecuarias" title="Código Forestal 1: Normas Generales Montes y Vías Pecuarias" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=269_Codigo_Forestal_2_Normas_sobre_Ordenacion_y_Aprovechamientos_Forestales&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/269_Codigo_Forestal_2_Normas_sobre_Ordenacion_y_Aprovechamientos_Forestales.png" alt="Código Forestal 2: Normas sobre Ordenación y Aprovechamientos Forestales" title="Código Forestal 2: Normas sobre Ordenación y Aprovechamientos Forestales" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=270_Codigo_Forestal_3_Incendios_Forestales&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/270_Codigo_Forestal_3_Incendios_Forestales.png" alt="Código Forestal 3: Incendios Forestales" title="Código Forestal 3: Incendios Forestales" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=271_Codigo_Forestal_4_Guarderia_Forestal&tipo=C&modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/271_Codigo_Forestal_4_Guarderia_Forestal.png" alt="Código Forestal 4: Guardería Forestal" title="Código Forestal 4: Guardería Forestal" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado" title="actualizado"/>
+            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<p class="linkSubir"><a href="#top">subir</a></p></div>
+
+<h3>Otros c&oacute;digos electr&oacute;nicos</h3>
+<p>En este apartado se incluyen algunos c&oacute;digos electr&oacute;nicos cuyo contenido se refiere a &aacute;mbitos espec&iacute;ficos y por ello no forman parte de la colecci&oacute;n.</p>
+
+<div class="estante">
+  <ul>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=085_Codigo_de_Aguas__de_la_parte_espanola_de_la_Demarcacion__Hidrografica_del_Mino-Sil&amp;modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/085_Codigo_de_Aguas__de_la_parte_espanola_de_la_Demarcacion__Hidrografica_del_Mino-Sil.png" alt="Código de Aguas  de la parte española de la Demarcación  Hidrográfica del Miño-Sil" title="Código de Aguas  de la parte española de la Demarcación  Hidrográfica del Miño-Sil" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=046_Codigo_de_Aguas_de_la_Cuenca_del_Duero&amp;modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/046_Codigo_de_Aguas_de_la_Cuenca_del_Duero.png" alt="Código de Aguas de la Cuenca del Duero" title="Código de Aguas de la Cuenca del Duero" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado"/>
+            </span>
+        </a>
+      </li>
+      <li class="etiqueta">
+        <a href="/biblioteca_juridica/codigos/codigo.php?id=273_Codigo_de_Patronos&amp;modo=1">
+            <span>
+              <img src="/datos/imagenes/codigos/273_Codigo_de_Patronos.png" alt="Código de Patronos" title="Código de Patronos" width="199" height="281" />
+              <img src="/imagenes/codigos/cod_actualizado.png" class="etiqueta" alt="actualizado"/>
+            </span>
+        </a>
+      </li>
+  </ul>
+  <div class="espacio"></div>
+</div>
+<p class="linkSubir"><a href="#top">subir</a></p>
+      </div> <!-- .pool -->
+    </div> <!-- #contenedor -->
+    <div id="pie">
+      <div id="menuPie">
+        <div class="otros-enlaces">
+          <div class="grupo-otros-enlaces izquierda">
+            <div class="enlace"><a href="/contactar/" accesskey="3">Contactar</a></div>
+            <div class="enlace"><a href="/informacion/index.php" hreflang="es">Sobre esta sede electr&oacute;nica</a></div>
+            <div class="enlace"><a href="/informacion/mapa_web/" accesskey="2">Mapa</a></div>
+            <div class="enlace"><a href="/informacion/aviso_legal/index.php">Aviso legal</a></div>
+            <div class="enlace"><a href="/informacion/accesibilidad/" accesskey="0">Accesibilidad</a></div>
+            <div class="enlace"><a href="/informacion/index.php#proteccion-de-datos" hreflang="es">Protecci&oacute;n de datos</a></div>
+            <div class="enlace"><a href="/informacion/tutoriales/" hreflang="es">Tutoriales</a></div>
+          </div>
+          <div class="grupo-otros-enlaces derecha">
+            <div class="enlace icono"><a href="/rss/" hreflang="es" lang="es" title="RSS"><img src="/imagenes/home/rss_32.png" srcset="/imagenes/home/rss_32.svg" alt="RSS"></a></div>
+            <div class="enlace icono"><a href="/redes_sociales?pag=tw" hreflang="es" lang="es" title="boegob, el BOE en Twitter"><img src="/imagenes/home/twitter_32.png" srcset="/imagenes/home/twitter_32.svg"  alt="Twitter"></a></div>
+            <div class="enlace icono"><a href="/redes_sociales?pag=fb" hreflang="es" lang="es" title="El BOE en Facebook"><img src="/imagenes/home/facebook_32.png" srcset="/imagenes/home/facebook_32.svg" alt="Facebook"></a></div>
+            <div class="enlace icono"><a href="/redes_sociales?pag=ln" hreflang="es" lang="es" title="El BOE en LinkedIn"><img src="/imagenes/home/linkedin_32.png" srcset="/imagenes/home/linkedin_32.svg" alt="LinkedIn"></a></div>
+            <div class="enlace icono"><a href="/redes_sociales?pag=yt" hreflang="es" lang="es" title="El BOE en YouTube"><img src="/imagenes/home/youtube_32.png" srcset="/imagenes/home/youtube_32.svg" alt="YouTube"></a></div>
+          </div>
+        </div> <!-- .franjaMenu -->
+      </div> <!-- #menuPie -->
+      <div class="franja-pie">
+        <p class="nombre-organismo">Agencia Estatal Bolet&iacute;n Oficial del Estado</p>
+        <p class="direccion-organismo"><abbr title="Avenida">Avda.</abbr> de Manoteras, 54 - 28050 Madrid</p>
+      </div>
+    </div> <!-- #pie -->
+    <script src="/js/desplegable.js"></script>
+  </body>
+</html>
