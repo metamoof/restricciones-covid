@@ -20,7 +20,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pipenv
-        pipenv sync --system
+        pipenv sync
     - name: Leer Cabecera
       run: |
         curl "https://www.boe.es/biblioteca_juridica/index.php?lang=es&tipo=C&modo=1" -o documentos/nacional/boe/codigos/codigos.html
