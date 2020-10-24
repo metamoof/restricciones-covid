@@ -1,4 +1,4 @@
-name: :blue_book: Actualizar Datos del BOE
+name: ":blue_book: Actualizar Datos del BOE"
 
 on:
   push:
