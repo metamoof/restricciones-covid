@@ -16,22 +16,22 @@ jobs:
       uses: ./.github/actions/curl 
       with: 
         url: "http://aranzadi.aranzadidigital.es/maf/app/search/bcodes/documents?parentGuid=Iaf98f4905a2c11dca629010000000000&guid=I39e97950ac4311ea9a78aeef4082d1c9&firstTime=no&stid=bcodes&originates-from-link=true&ds=ARZ_LEGIS_CS&modDate=2020/10/25&rpp=4000&displayName=bcodes.aragon&displayText=COVID-19&docs-lang=spa&crumbLabel=bcodes.aragon"
-        output-file: documentos/España/Aragon/normativa/indice-covid-19.html
+        output-file: documentos/España/Aragón/normativa/indice-covid-19.html
     - name: Descargar normativa consolidada de investigación
       uses: ./.github/actions/curl 
       with: 
         url: "http://aranzadi.aranzadidigital.es/maf/app/document?startChunk=1&endChunk=2&stid=marginal_chunk&ds=ARZ_LEGIS_CS&infotype=arz_legis&marginal=LARG\\2020\\218&version=&srguid=i0ad6adc500000175617c18c002d6281e&lang=spa&src=toce&spos=1&epos=1&mdfilter=mdlegisfilter"
-        output-file: documentos/España/Aragon/normativa/LARG-2020-218.html
+        output-file: documentos/España/Aragón/normativa/LARG-2020-218.html
     - name: Descargar normativa consolidada adicional
       uses: ./.github/actions/curl 
       with: 
         url: "http://aranzadi.aranzadidigital.es/maf/app/document?startChunk=1&endChunk=2&stid=marginal_chunk&ds=ARZ_LEGIS_CS&infotype=arz_legis&marginal=LARG\\2020\\154&version=&srguid=i0ad6adc500000175617c18c002d6281e&lang=spa&src=toce&spos=2&epos=2&mdfilter=mdlegisfilter"
-        output-file: documentos/España/Aragon/normativa/LARG-2020-154.html
+        output-file: documentos/España/Aragón/normativa/LARG-2020-154.html
     - name: Descargar normativa consolidada urgente
       uses: ./.github/actions/curl 
       with: 
         url: "http://aranzadi.aranzadidigital.es/maf/app/document?startChunk=1&endChunk=2&stid=marginal_chunk&ds=ARZ_LEGIS_CS&infotype=arz_legis&marginal=LARG\\2020\\120&version=&srguid=i0ad6adc500000175617c18c002d6281e&lang=spa&src=toce&spos=3&epos=3&mdfilter=mdlegisfilter"
-        output-file: documentos/España/Aragon/normativa/LARG-2020-120.html
+        output-file: documentos/España/Aragón/normativa/LARG-2020-120.html
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
