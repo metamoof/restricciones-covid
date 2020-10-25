@@ -1,0 +1,23 @@
+name: "Castilla-La Mancha: Actualizar Datos del DOCM"
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron:  '6,26,46 * * * *'
+
+jobs:
+  descarga-normativa-pandemia:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out this repo
+      uses: actions/checkout@v2
+    - name: Descargar resumen pandemia
+      uses: ./.github/actions/curl 
+      with: 
+        url: "https://docm.castillalamancha.es/portaldocm/listadoCOVID.do"
+        output-file: documentos/España/Castilla-La Mancha/normativa/covid-19.html
+    - name: Commit and push if it changed
+      uses: ./.github/actions/commit-changes
+      with:
+        commit-message: ":orange_book: Castilla-La Mancha: Actualización de DOCM: ${timestamp}"
