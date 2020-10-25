@@ -17,6 +17,11 @@ jobs:
       with: 
         url: "https://www.juntadeandalucia.es/servicios/normativa/covid-19.html"
         output-file: documentos/España/Andalucia/normativa/covid-19.html
+    - name: Descargar normativa consolidada de medidad preventivas
+      uses: ./.github/actions/curl 
+      with: 
+        url: https://www.juntadeandalucia.es/export/drupaljda/orden_19_06_2020_consolidado.pdf
+        output-file: documentos/España/Andalucia/normativa/covid-19-consolidada.pdf
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
