@@ -12,6 +12,10 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v2
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x' 
     - name: Descargar resumen pandemia
       uses: ./.github/actions/curl 
       with: 
