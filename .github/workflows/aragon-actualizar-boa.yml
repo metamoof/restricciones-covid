@@ -35,4 +35,4 @@ jobs:
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
-        commit-message: ":orange_book: Andalucia: Actualización de BOJA: ${timestamp}"
+        commit-message: ":orange_book: Aragón: Actualización de BOA: ${timestamp}"
