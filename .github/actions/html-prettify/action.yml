@@ -13,10 +13,5 @@ runs:
         pip install bs4
       shell: bash
     - name: Prettify
-      run: |
-        from bs4 import BeautifulSoup
-        with open('${{ inputs.filename }}',' 'rb') as f:
-          b = BeautifulSoup(f, features="html.parser")
-        with open('${{ inputs.filename }}'', 'w') as f:
-          f.write(b.prettify())
-      shell: python
+      run: python $/prettify.py "${{ inputs.filename }}"
+      shell: bash
