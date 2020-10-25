@@ -1,0 +1,23 @@
+name: "Andalucia: Actualizar Datos del BOJA"
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron:  '6,26,46 * * * *'
+
+jobs:
+  descarga-normativa-pandemia:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out this repo
+      uses: actions/checkout@v2
+    - name: Descargar resumen pandemia
+      uses: ./.github/actions/curl 
+      with: 
+        url: "https://www.juntadeandalucia.es/servicios/normativa/covid-19.html"
+        output-file: documentos/España/Andalucia/normativa/covid-19.html
+    - name: Commit and push if it changed
+      uses: ./.github/actions/commit-changes
+      with:
+        commit-message: ":orange_book: Andalucia: Actualización de BOJA: ${timestamp}"
