@@ -20,17 +20,17 @@ jobs:
     - name: Descargar normativa consolidada de investigación
       uses: ./.github/actions/curl 
       with: 
-        url: "http://aranzadi.aranzadidigital.es/maf/app/document?startChunk=1&endChunk=2&stid=marginal_chunk&ds=ARZ_LEGIS_CS&infotype=arz_legis&marginal=LARG\2020\218&version=&srguid=i0ad6adc500000175617c18c002d6281e&lang=spa&src=toce&spos=1&epos=1&mdfilter=mdlegisfilter"
+        url: "http://aranzadi.aranzadidigital.es/maf/app/document?startChunk=1&endChunk=2&stid=marginal_chunk&ds=ARZ_LEGIS_CS&infotype=arz_legis&marginal=LARG\\2020\\218&version=&srguid=i0ad6adc500000175617c18c002d6281e&lang=spa&src=toce&spos=1&epos=1&mdfilter=mdlegisfilter"
         output-file: documentos/España/Aragon/normativa/LARG-2020-218.html
     - name: Descargar normativa consolidada adicional
       uses: ./.github/actions/curl 
       with: 
-        url: "http://aranzadi.aranzadidigital.es/maf/app/document?startChunk=1&endChunk=2&stid=marginal_chunk&ds=ARZ_LEGIS_CS&infotype=arz_legis&marginal=LARG\2020\154&version=&srguid=i0ad6adc500000175617c18c002d6281e&lang=spa&src=toce&spos=2&epos=2&mdfilter=mdlegisfilter"
+        url: "http://aranzadi.aranzadidigital.es/maf/app/document?startChunk=1&endChunk=2&stid=marginal_chunk&ds=ARZ_LEGIS_CS&infotype=arz_legis&marginal=LARG\\2020\\154&version=&srguid=i0ad6adc500000175617c18c002d6281e&lang=spa&src=toce&spos=2&epos=2&mdfilter=mdlegisfilter"
         output-file: documentos/España/Aragon/normativa/LARG-2020-154.html
     - name: Descargar normativa consolidada urgente
       uses: ./.github/actions/curl 
       with: 
-        url: "http://aranzadi.aranzadidigital.es/maf/app/document?startChunk=1&endChunk=2&stid=marginal_chunk&ds=ARZ_LEGIS_CS&infotype=arz_legis&marginal=LARG\2020\120&version=&srguid=i0ad6adc500000175617c18c002d6281e&lang=spa&src=toce&spos=3&epos=3&mdfilter=mdlegisfilter"
+        url: "http://aranzadi.aranzadidigital.es/maf/app/document?startChunk=1&endChunk=2&stid=marginal_chunk&ds=ARZ_LEGIS_CS&infotype=arz_legis&marginal=LARG\\2020\\120&version=&srguid=i0ad6adc500000175617c18c002d6281e&lang=spa&src=toce&spos=3&epos=3&mdfilter=mdlegisfilter"
         output-file: documentos/España/Aragon/normativa/LARG-2020-120.html
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
