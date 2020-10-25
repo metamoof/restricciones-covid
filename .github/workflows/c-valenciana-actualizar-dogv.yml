@@ -1,4 +1,4 @@
-name: "Castilla-La Mancha: Actualizar Datos del DOCM"
+name: "Comunidad Valenciana: Actualizar Datos del DOGV"
 
 on:
   push:
