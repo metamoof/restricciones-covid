@@ -1,0 +1,15 @@
+name: Commit and push
+description: Commit changes and push them
+inputs:
+  url:
+    description: URL to download
+    required: true
+  output-file:
+    description: Output filename
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Download file using curl
+      run: curl "${{ inputs.url }}" -o "${{ inputs.output-file }}"
+      shell: bash

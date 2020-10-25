@@ -13,8 +13,10 @@ jobs:
     - name: Check out this repo
       uses: actions/checkout@v2
     - name: Descargar resumen pandemia
-      run: |
-        curl "https://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_CoV-2/" -o documentos/España/Catalunya/normativa/normativa-covid.html
+      uses: ./.github/actions/curl 
+      with: 
+        url: "https://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_CoV-2/"
+        output-file: documentos/España/Catalunya/normativa/normativa-covid.html
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
