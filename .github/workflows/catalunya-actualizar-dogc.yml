@@ -1,0 +1,21 @@
+name: "Catalunya: Actualizar Datos del DOGC"
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron:  '6,26,46 * * * *'
+
+jobs:
+  descarga-normativa-pandemia:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out this repo
+      uses: actions/checkout@v2
+    - name: Descargar resumen pandemia
+      run: |
+        curl "https://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_CoV-2/" -o documentos/España/Catalunya/normativa/normativa-covid.html
+    - name: Commit and push if it changed
+      uses: ./.github/actions/commit-changes
+      with:
+        commit-message: ":orange_book: Catalunya: Actualización de DOGC: ${timestamp}"
