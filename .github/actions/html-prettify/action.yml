@@ -15,8 +15,8 @@ runs:
     - name: Prettify
       run: |
         from bs4 import BeautifulSoup
-        with open(${{ inputs.filename }}, 'rb') as f:
+        with open('${{ inputs.filename }}',' 'rb') as f:
           b = BeautifulSoup(f, features="html.parser")
-        with open(${{ inputs.filename }}, 'w') as f:
+        with open('${{ inputs.filename }}'', 'w') as f:
           f.write(b.prettify())
       shell: python
