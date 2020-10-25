@@ -13,5 +13,5 @@ runs:
         pip install bs4
       shell: bash
     - name: Prettify
-      run: python $/prettify.py "${{ inputs.filename }}"
+      run: python $GITHUB_ACTION_PATH/prettify.py "${{ inputs.filename }}"
       shell: bash
