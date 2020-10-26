@@ -17,15 +17,19 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.x' 
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pipenv
+        pipenv sync
+      shell: bash
     - name: Descargar resumen pandemia
       uses: ./.github/actions/curl 
       with: 
         url: "https://www.dogv.gva.es/es/covid-19"
         output-file: documentos/España/Comunitat Valenciana/normativa/covid-19.html
-    - name: Formatea html
-      uses: ./.github/actions/html-prettify 
-      with: 
-        filename: documentos/España/Comunitat Valenciana/normativa/covid-19.html
+    - name: Limpiar fichero
+      run: pipenv run python ./scripts/valencia-limpiar-ficheros.py
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
