@@ -30,8 +30,6 @@ jobs:
       run: pipenv run python ./scripts/listar-codigos-boe.py
     - name: Descargar lista de normas desde Codigos
       run: pipenv run python ./scripts/descargar-codigos-boe.py
-    - name: Descargar la normativa consolidada
-      run: pipenv run python ./scripts/descargar-normativa-boe.py
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
