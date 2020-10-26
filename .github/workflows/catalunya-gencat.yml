@@ -13,6 +13,16 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v2
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.7' 
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pipenv
+        pipenv sync
+      shell: bash
     - name: Descargar nuevas medidas - español
       uses: ./.github/actions/curl 
       with: 
@@ -23,7 +33,10 @@ jobs:
       with: 
         url: "http://interior.gencat.cat/ca/arees_dactuacio/proteccio_civil/consells_autoproteccio_emergencia/malalties-transmissibles-emergents-amb-potencial-alt-risc-/noves-mesures-per-contenir-els-brots-covid-19/" 
         output-file: "documentos/España/Catalunya/interior/Noves mesures per contenir els brots COVID-19.html"
+    - name: Limpiar ficheros
+      run: pipenv run python ./scripts/catalunya-limpiar-interior.py
+      shell: bash
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
-        commit-message: "📓 [Catalunya] Actualización de Gencat - Interior: ${timestamp}"
+        commit-message: "📓 [Catalunya] Gencat - Interior: ${timestamp}"
