@@ -19,6 +19,16 @@ assert len(scripts) == 1
 
 # No necesitamos el bloque de scripts, por lo que borramos el interior
 s = scripts[0]
-s.clear()
+s.next.replace_with("/* Reemplazado */")
+
+# tambien hay una serie de links a cosas minificadas con un timestamp
+links = [link for link in b.find_all("link") if "&t=" in link["href"]]
+for link in links:
+    links["href"] = "#reemplazado"
+
+scripts = [s for s in b.find_all("script") if "&t=" in s.get("src", "")]
+for s in scripts:
+    s["src"] = "#reemplazado"
+
 
 SOURCE_FILE.write_text(b.prettify(), encoding="utf8")
