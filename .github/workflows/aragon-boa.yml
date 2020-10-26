@@ -1,4 +1,4 @@
-name: "Aragón: Actualizar Datos del BOA"
+name: "Aragón: 📙 BOA"
 
 on:
   push:
@@ -7,7 +7,8 @@ on:
     - cron:  '46 * * * *'
 
 jobs:
-  descarga-normativa-pandemia:
+  descarga-normativa-covid:
+    name: Descargar Normativa COVID desde Aranzadi
     runs-on: ubuntu-latest
     steps:
     - name: Check out this repo
@@ -35,4 +36,4 @@ jobs:
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
-        commit-message: ":orange_book: Aragón: Actualización de BOA: ${timestamp}"
+        commit-message: "📙 **Aragón:** Actualización de BOA: ${timestamp}"

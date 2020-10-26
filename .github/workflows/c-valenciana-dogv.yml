@@ -1,4 +1,4 @@
-name: "Comunidad Valenciana: Actualizar Datos del DOGV"
+name: "Comunidad Valenciana: 📙 DOGV"
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
 
 jobs:
   descarga-normativa-pandemia:
+    name: Descargar resumen COVID-19 DOGV
     runs-on: ubuntu-latest
     steps:
     - name: Check out this repo
@@ -28,4 +29,4 @@ jobs:
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
-        commit-message: ":orange_book: Comunitat Valenciana: Actualización de DOGV: ${timestamp}"
+        commit-message: "📙 **Comunitat Valenciana:** Actualización de DOGV: ${timestamp}"

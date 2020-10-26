@@ -1,10 +1,10 @@
-name: "Catalunya: Actualizar Datos del DOGC"
+name: "Extremadura: 📙 DOE"
 
 on:
   push:
   workflow_dispatch:
   schedule:
-    - cron:  '46 * * * *'
+    - cron:  '26 * * * *'
 
 jobs:
   descarga-normativa-pandemia:
@@ -15,9 +15,9 @@ jobs:
     - name: Descargar resumen pandemia
       uses: ./.github/actions/curl 
       with: 
-        url: "https://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_CoV-2/"
-        output-file: documentos/España/Catalunya/normativa/normativa-covid.html
+        url: "http://doe.gobex.es/covid/covid.pdf"
+        output-file: documentos/España/Extremadura/normativa/covid.pdf
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
-        commit-message: ":orange_book: Catalunya: Actualización de DOGC: ${timestamp}"
+        commit-message: "📙 **Extremadura:** Actualización de DOE: ${timestamp}"

@@ -1,13 +1,14 @@
-name: "Castilla-La Mancha: Actualizar Datos del DOCM"
+name: "Catalunya: 📙 DOGC"
 
 on:
   push:
   workflow_dispatch:
   schedule:
-    - cron:  '26 * * * *'
+    - cron:  '46 * * * *'
 
 jobs:
   descarga-normativa-pandemia:
+    name: Descargar Resumen COVID
     runs-on: ubuntu-latest
     steps:
     - name: Check out this repo
@@ -15,9 +16,9 @@ jobs:
     - name: Descargar resumen pandemia
       uses: ./.github/actions/curl 
       with: 
-        url: "https://docm.castillalamancha.es/portaldocm/listadoCOVID.do"
-        output-file: documentos/España/Castilla-La Mancha/normativa/covid-19.html
+        url: "https://portaljuridic.gencat.cat/ca/pjur_ocults/pjur_CoV-2/"
+        output-file: documentos/España/Catalunya/normativa/normativa-covid.html
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
-        commit-message: ":orange_book: Castilla-La Mancha: Actualización de DOCM: ${timestamp}"
+        commit-message: "📙 **Catalunya:** Actualización de DOGC: ${timestamp}"

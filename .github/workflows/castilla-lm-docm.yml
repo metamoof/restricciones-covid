@@ -1,4 +1,4 @@
-name: "Extremadura: Actualizar Datos del DOE"
+name: "Castilla-La Mancha: 📙 DOCM"
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
 
 jobs:
   descarga-normativa-pandemia:
+    name: Descsrga Listado COVID
     runs-on: ubuntu-latest
     steps:
     - name: Check out this repo
@@ -15,9 +16,9 @@ jobs:
     - name: Descargar resumen pandemia
       uses: ./.github/actions/curl 
       with: 
-        url: "http://doe.gobex.es/covid/covid.pdf"
-        output-file: documentos/España/Extremadura/normativa/covid.pdf
+        url: "https://docm.castillalamancha.es/portaldocm/listadoCOVID.do"
+        output-file: documentos/España/Castilla-La Mancha/normativa/covid-19.html
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
-        commit-message: ":orange_book: Extremadura: Actualización de DOE: ${timestamp}"
+        commit-message: "📙 **Castilla-La Mancha:** Actualización de DOCM: ${timestamp}"

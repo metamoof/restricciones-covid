@@ -1,4 +1,4 @@
-name: "Catalunya: Actualizar Datos de Gencat - Interior"
+name: "Catalunya: 📓 Gencat"
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
 
 jobs:
   descarga-normativa-pandemia:
+    name: Descargar Páginas COVID - Interior
     runs-on: ubuntu-latest
     steps:
     - name: Check out this repo
@@ -25,4 +26,4 @@ jobs:
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
-        commit-message: ":notebook: Catalunya: Actualización de Informacion Interior: ${timestamp}"
+        commit-message: "📓 Catalunya: Actualización de Gencat - Interior: ${timestamp}"
