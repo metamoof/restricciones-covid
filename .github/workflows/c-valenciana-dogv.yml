@@ -29,4 +29,4 @@ jobs:
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
-        commit-message: "📙 **Comunitat Valenciana:** Actualización de DOGV: ${timestamp}"
+        commit-message: "📙 [Comunitat Valenciana] Actualización de DOGV: ${timestamp}"

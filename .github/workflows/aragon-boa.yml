@@ -36,4 +36,4 @@ jobs:
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
-        commit-message: "📙 **Aragón:** Actualización de BOA: ${timestamp}"
+        commit-message: "📙 [Aragón] Actualización de BOA: ${timestamp}"

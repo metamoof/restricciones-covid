@@ -26,4 +26,4 @@ jobs:
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
-        commit-message: "📙 **Andalucia:** BOJA: ${timestamp}"
+        commit-message: "📙 [Andalucia] BOJA: ${timestamp}"

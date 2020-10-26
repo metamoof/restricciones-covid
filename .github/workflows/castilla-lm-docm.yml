@@ -21,4 +21,4 @@ jobs:
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
-        commit-message: "📙 **Castilla-La Mancha:** Actualización de DOCM: ${timestamp}"
+        commit-message: "📙 [Castilla-La Mancha] Actualización de DOCM: ${timestamp}"

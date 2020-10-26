@@ -33,7 +33,7 @@ jobs:
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
-        commit-message: "📘 **BOE** Código COVID-19: ${timestamp}"
+        commit-message: "📘 [BOE] Código COVID-19: ${timestamp}"
   
   extraer-eu-ccaa:
     name: Extraer Normativa UE, CCAA
@@ -55,7 +55,7 @@ jobs:
       - name: Commit and push if it changed
         uses: ./.github/actions/commit-changes
         with:
-          commit-message: "📘 **BOE** UE/CCAA: ${timestamp}"
+          commit-message: "📘 [BOE] UE/CCAA: ${timestamp}"
 
   descargar-normativa:
     name: Descargar Normativa
@@ -78,6 +78,6 @@ jobs:
       - name: Commit and push if it changed
         uses: ./.github/actions/commit-changes
         with:
-          commit-message: "📘 **BOE** Normativa: ${timestamp}"
+          commit-message: "📘 [BOE] Normativa: ${timestamp}"
 
     

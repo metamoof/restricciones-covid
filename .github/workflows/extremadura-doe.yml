@@ -20,4 +20,4 @@ jobs:
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
-        commit-message: "📙 **Extremadura:** Actualización de DOE: ${timestamp}"
+        commit-message: "📙 [Extremadura] Actualización de DOE: ${timestamp}"
