@@ -12,4 +12,4 @@ for f in files:
     votos = b.find_all(string=re.compile("votos"))
     for s in votos:
         s.replace_with("(votos reemplazados)")
-    f.write_bytes(b.encode("utf8", formatter="html5"))
+    f.write_text(b.prettify(), encoding="utf8")

@@ -12,4 +12,4 @@ for f in files:
     tag["content"] = "#reemplazado"
     s = b.find(string=re.compile("GEOATX"))
     s.replace_with("#reemplazado")
-    f.write_bytes(b.encode("utf8", formatter="html5"))
+    f.write_text(b.prettify(), encoding="utf8")
