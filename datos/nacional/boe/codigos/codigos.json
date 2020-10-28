@@ -38,8 +38,12 @@
             "url": "https://www.boe.es/biblioteca_juridica/codigos/codigo.php?id=361_COVID-19_Arrendamiento_de_vivienda_y_locales_comerciales&tipo=C&modo=1&tab=2"
         },
         {
-            "Nombre": "COVID-19: Derecho Europeo, Estatal y Auton\u00f3mico ",
-            "url": "https://www.boe.es/biblioteca_juridica/codigos/codigo.php?id=355_COVID-19_Derecho_Europeo_Estatal_y_Autonomico_&tipo=C&modo=1&tab=2"
+            "Nombre": "COVID-19: Derecho Europeo y Estatal  ",
+            "url": "https://www.boe.es/biblioteca_juridica/codigos/codigo.php?id=355_COVID-19_Derecho_Europeo_y_Estatal__&tipo=C&modo=1&tab=2"
+        },
+        {
+            "Nombre": "COVID-19 Derecho Auton\u00f3mico",
+            "url": "https://www.boe.es/biblioteca_juridica/codigos/codigo.php?id=396_COVID-19_Derecho_Autonomico&tipo=C&modo=1&tab=2"
         }
     ]
 }
