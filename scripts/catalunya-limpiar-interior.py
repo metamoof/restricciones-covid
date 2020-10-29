@@ -12,4 +12,8 @@ for f in files:
     tag["content"] = "#reemplazado"
     s = b.find(string=re.compile("GEOATX"))
     s.replace_with("#reemplazado")
+    # un script que van poniendo y quitando constantemente
+    s = b.find(text=re.compile("mozPerformance"))
+    if s:
+        s.parent.decompose()
     f.write_text(b.prettify(), encoding="utf8")
