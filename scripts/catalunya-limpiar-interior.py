@@ -17,5 +17,6 @@ for f in files:
     if s:
         s.parent.decompose()
     s = b.find("link", rel="alternate")
-    s.s.replace_with("<!-- #reemplazado -->")
+    if s: 
+        s.replace_with("<!-- #reemplazado -->")
     f.write_text(b.prettify(), encoding="utf8")
