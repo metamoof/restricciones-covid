@@ -28,7 +28,7 @@ jobs:
         url: "http://doe.gobex.es/covid/covid.pdf"
         output-file: documentos/España/Extremadura/normativa/covid.pdf
     - name: Extraer enlaces covid19 de pdf
-      run: pipenv python ./scripts/extremadura-extraer-normativa.py
+      run: pipenv run python ./scripts/extremadura-extraer-normativa.py
     - name: Commit and push if it changed
       uses: ./.github/actions/commit-changes
       with:
