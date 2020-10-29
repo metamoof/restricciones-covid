@@ -34,7 +34,7 @@ extract_epub_page(
 # Luego la normativa aotnómica
 extract_epub_page(
     "https://www.boe.es/biblioteca_juridica/codigos/abrir_epub.php?" +
-    "?fich=396_COVID-19_Derecho_Autonomico.epub",
+    "fich=396_COVID-19_Derecho_Autonomico.epub",
     "nota-autor.xhtml",
     "documentos/nacional/boe/codigos/normativa-autonómica.xhtml"
 )
