@@ -10,6 +10,8 @@ flake8 = "*"
 bs4 = "*"
 requests = "*"
 ebooklib = "*"
+pdfreader = "*"
+bitarray = {path = "C:/Users/garadford/Downloads/bitarray-1.6.0-cp37-cp37m-win_amd64.whl"}
 
 [requires]
 python_version = "3.7"
