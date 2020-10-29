@@ -5,6 +5,7 @@ cambia en cada descarga
 """
 from pathlib import Path
 from bs4 import BeautifulSoup
+import re
 
 SOURCE_FILE = Path("documentos/España/Comunitat Valenciana/normativa/")
 SOURCE_FILE /= "covid-19.html"
@@ -30,5 +31,7 @@ scripts = [s for s in b.find_all("script") if "&t=" in s.get("src", "")]
 for s in scripts:
     s["src"] = "#reemplazado"
 
+s = b.find(string=re.compile("pro-"))
+s.replace_with("#reemplazado")
 
 SOURCE_FILE.write_text(b.prettify(), encoding="utf8")
