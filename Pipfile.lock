@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a1b0b43c1003cf4d937b3abddc8460ee0222c94e3f955a8ac68d373456e22de3"
+            "sha256": "2b48b64dee471f4f0515ad155fae0ead0355bd3a1c8809ad627c70fbb6a954d4"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -29,12 +29,7 @@
                 "sha256:ba157ddebddc723fe021fc80595b3c70924d69ee58286b62bfca21da48edfc9d"
             ],
             "index": "pypi",
-            "markers": "sys_platform != 'win32'",
             "version": "==1.6.0"
-        },
-        "bitarray-win": {
-            "path": "C:/Users/garadford/Downloads/bitarray-1.6.0-cp37-cp37m-win_amd64.whl",
-            "sys_platform": "== 'win32'"
         },
         "bs4": {
             "hashes": [
