@@ -24,6 +24,13 @@
             ],
             "version": "==4.9.3"
         },
+        "bitarray": {
+            "hashes": [
+                "sha256:ba157ddebddc723fe021fc80595b3c70924d69ee58286b62bfca21da48edfc9d"
+            ],
+            "path": "C:/Users/garadford/Downloads/bitarray-1.6.0-cp37-cp37m-win_amd64.whl",
+            "version": "==1.6.0"
+        },
         "bs4": {
             "hashes": [
                 "sha256:36ecea1fd7cc5c0c6e4a1ff075df26d50da647b75376626cc186e2212886dd3a"
