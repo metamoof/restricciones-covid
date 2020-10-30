@@ -1,5 +1,6 @@
 from pdfreader import PDFDocument
 from pathlib import Path
+from collections import OrderedDict
 import json
 
 PDF_FILE = Path("documentos/España/Extremadura/normativa/covid.pdf")
@@ -13,6 +14,6 @@ with PDF_FILE.open("rb") as fd:
         links += [annot.A.URI.decode("utf8") for annot in page.Annots]
 
 
-links = list(set(links))
+links = list(OrderedDict.fromkeys(links))
 
 OUT_FILE.write_text(json.dumps(links, sort_keys=True, indent=4))
