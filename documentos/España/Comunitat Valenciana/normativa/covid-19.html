@@ -171,62 +171,15 @@
           <div class="portlet-borderless-container" style="">
            <div class="portlet-body">
             <div class="journal-content-article" id="article_10155_164026666_164028977_1.3">
-             <div class="journal-template-error">
-              <span class="portlet-msg-error">
-               Se ha producido un error al procesar la plantilla.
-              </span>
-              <pre>Unable to find resource '10155#10193#679153'</pre>
-              <div class="scroll-pane">
-               <div class="inner-scroll-pane">
-                <pre><span>1</span>&lt;div class="banners"&gt; </pre>
-                <pre><span>2</span>    #set($botones = $!Boton.getSiblings()) </pre>
-                <pre><span>3</span>	#set($horizontal = "BannerHorizontal") </pre>
-                <pre><span>4</span>	#set($vertical = "BannerVertical") </pre>
-                <pre><span>5</span> </pre>
-                <pre><span>6</span>	#if($!Visualizacion.getData() == $vertical) </pre>
-                <pre><span>7</span>		#set($class_orientacion = "banner_vertical") </pre>
-                <pre><span>8</span>	#elseif ($!Visualizacion.getData() == $horizontal) </pre>
-                <pre><span>9</span>		#set($class_orientacion = "banner_horizontal") </pre>
-                <pre><span>10</span>	#else </pre>
-                <pre><span>11</span>		#set($class_orientacion = "banner") </pre>
-                <pre><span>12</span>	#end </pre>
-                <pre><span>13</span>	#if($validator.isNotNull($botones) &amp;&amp; $botones.size()&gt;0) </pre>
-                <pre><span>14</span>		&lt;ul&gt; </pre>
-                <pre><span>15</span>			#foreach ($boton in $botones) </pre>
-                <pre><span>16</span>				&lt;li class="$class_orientacion"&gt; </pre>
-                <pre><span>17</span>					#if($validator.isNotNull($!boton.URL.getData) || ($!boton.URL.getData()!="")) </pre>
-                <pre><span>18</span>						#if($validator.isNotNull($!boton.Apertura.getData())) </pre>
-                <pre><span>19</span>							#set($target = $!boton.Apertura.getData()) </pre>
-                <pre><span>20</span>						#else </pre>
-                <pre><span>21</span>							#set($target = "_self") </pre>
-                <pre><span>22</span>						#end </pre>
-                <pre><span>23</span>						#if ($target == "_blank") </pre>
-                <pre><span>24</span>							#set($titleEnlace = "Abre una ventana nueva") </pre>
-                <pre><span>25</span>						#else </pre>
-                <pre><span>26</span>							#set($titleEnlace = "") </pre>
-                <pre><span>27</span>						#end </pre>
-                <pre><span>28</span>					 </pre>
-                <pre><span>29</span>						&lt;a href="$!boton.URL.getData()" target="$target" title="$titleEnlace"&gt; </pre>
-                <pre><span>30</span>							#if($validator.isNotNull($!boton.Imagen.getData) || ($!boton.Imagen.getData()!="")) </pre>
-                <pre><span>31</span>								&lt;img src="$!boton.Imagen.getData()" alt="$!boton.getData()" title="$!boton.getData()"/&gt; </pre>
-                <pre><span>32</span>                            #else </pre>
-                <pre><span>33</span>                                &lt;div class="destacado"&gt;$!boton.getData()&lt;/div&gt; </pre>
-                <pre><span>34</span>							#end </pre>
-                <pre><span>35</span>						&lt;/a&gt; </pre>
-                <pre><span>36</span>					#else </pre>
-                <pre><span>37</span>						#if($validator.isNotNull($!boton.Imagen.getData) || ($!boton.Imagen.getData()!="")) </pre>
-                <pre><span>38</span>								&lt;img src="$!boton.Imagen.getData()" alt="$!boton.getData()"/&gt; </pre>
-                <pre><span>39</span>						#else </pre>
-                <pre><span>40</span>                                &lt;div class="destacado"&gt;$!boton.getData()&lt;/div&gt; </pre>
-                <pre><span>41</span>    					#end </pre>
-                <pre><span>42</span>					#end </pre>
-                <pre><span>43</span>				&lt;/li&gt; </pre>
-                <pre><span>44</span>			#end </pre>
-                <pre><span>45</span>		&lt;/ul&gt; </pre>
-                <pre><span>46</span>		&lt;div class="clearfix"&gt;&lt;/div&gt; </pre>
-                <pre><span>47</span>	#end </pre>
-                <pre><span>48</span>&lt;/div&gt; </pre>
-               </div>
+             <div class="banners">
+              <ul>
+               <li class="banner_vertical">
+                <a href="/" target="_self" title="">
+                 <img alt="Diario Oficial de la Generalitat Valenciana" src="/documents/164026666/0/Logo+DOGV/ec72ed27-aea2-470c-8e31-20c0e15e8420?t=1571057677949" title="Diario Oficial de la Generalitat Valenciana"/>
+                </a>
+               </li>
+              </ul>
+              <div class="clearfix">
               </div>
              </div>
             </div>
