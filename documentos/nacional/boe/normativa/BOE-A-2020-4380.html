@@ -37,10 +37,13 @@
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa" property="http://data.europa.eu/eli/ontology#publisher" resource="www.boe.es"/>
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa" property="http://data.europa.eu/eli/ontology#date_publication" content="2020-04-09" datatype="http://www.w3.org/2001/XMLSchema#date"/>
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof"/>
+<meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/epub"/>
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/html"/>
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/pdf"/>
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/xml"/>
-<meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/epub"/>
+<meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/epub" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/epub" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/epub+zip"/>
+<meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/epub" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa"/>
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa"/>
@@ -50,9 +53,6 @@
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/xml" typeof="http://data.europa.eu/eli/ontology#Format"/>
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/xml" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/xml"/>
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/xml" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa"/>
-<meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/epub" typeof="http://data.europa.eu/eli/ontology#Format"/>
-<meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/epub" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/epub+zip"/>
-<meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa/epub" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/res/2020/04/06/(1)/dof/spa"/>
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/con/20200409" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/con/20200409" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
 <meta  about="https://www.boe.es/eli/es/res/2020/04/06/(1)/con/20200409" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/res"/>
@@ -244,8 +244,8 @@
 	
 <div id="barra_dj">
 	<form name="frm_search_dj" action="/djrae/execute_service.php" target="_blank" method="post">
-		<a class="logo-video" title="Ver tutorial del Diccionario Jur&iacute;dico" href="https://youtu.be/NwN3P3ilmdE" target="_blank"><span class="fuera">Vídeo tutorial sobre Diccionario del Española Jurídico de la Real Academia Española</span></a>
-		<a href="https://dpej.rae.es/" title="Ir a la web del Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico (DPEJ)" target="_blank"><div class="icon_dj"><span class="fuera">Ir a la web del Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico (DPEJ)</span>&nbsp;</div></a>
+		<a class="logo-video" title="Ver v&iacute;deo sobre el Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico" href="https://youtu.be/7W_GfHGjVrw" target="_blank"><span class="fuera">Vídeo tutorial sobre Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico de la Real Academia Espa&ntilde;ola</span></a>
+		<a href="https://dpej.rae.es/" title="Ir a la web del Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico (DPEJ)" target="_blank"><div class="icon_dj"><span class="fuera">Ir a la web del Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico (DPEJ)</span>&nbsp;</div></a>
 		<label class="azul_dj" for="caja-busqueda-djrae"><span class="fuera">Introducir t&eacute;rmino a buscar en el </span>
 		<span class="pc tablet">Diccionario Panhisp&aacute;nico del Espa&ntilde;ol <span class="rojo_dj">J</span>ur&iacute;dico</span>
 		</label>
