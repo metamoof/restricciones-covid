@@ -6453,7 +6453,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
            <!-- Si se ha marcado intercalar las im�genes, dependiendo del index del bloque que estamos recorriendo,
 	mostraremos el bloque de texto a la derecha (siempre que est� marcada la alineaci�n de los enlaces a la izquierda) -->
            <!-- Si hay cuerpo en el bloque lo mostramos -->
-           <div class="col-xs-12 columna_esquerra">
+           <div class="col-sm-8 columna_esquerra">
             <div class="cos_bloc basic_text_peq pd-15">
              <p>
               Resten prohibits els desplaçaments i la circulació per les vies públiques entre les 01.00 hores i les 06.00 hores de la matinada als municipis de més de 5.000 habitants que, en els darrers 7 dies, presentin un índex d’incidència acumulada igual o superior a 400 casos diagnosticats per 100.000 habitants. Aquesta prohibició també s’aplica als pobles i ciutats envoltats totalment o gairebé per municipis afectats.
@@ -6504,6 +6504,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
            </div>
            <!-- Dependiendo de si el cuerpo est� vac�o o no, ponemos una clase u otra a la columna de la derecha (100% o 30%) -->
            <div class="col-sm-4 columna_destacats">
+            <!-- Si los enlaces estan posicionados a la izquierda, cerramos el div de la columna de destacados y abrimos nuevo div debajo al 100%
+			en caso de estar posicionados a la derecha, se incluyen en la columna de destacados -->
+            <div class="inform_relacionada">
+             <div class="inform_relacionada_cont">
+              <h3>
+               Informació relacionada
+              </h3>
+              <div class="llistat_enllacos_filet">
+               <ul class="llistat_enllacos_filet_cont list-group llista-subhome one-column">
+                <li class="hidden">
+                </li>
+                <li class="list-group-item col-sm-12 ico_" id="last">
+                 <a href="https://web.gencat.cat/ca/activem/restriccions-territorials/confinament-nocturn" target="_blank" title="Aquest enllaç s'obre en una nova pestanya: Cercador de municipis amb confinament nocturn (Gencat.cat)">
+                  Cercador de municipis amb confinament nocturn (Gencat.cat)
+                 </a>
+                 <div class="descEnllac">
+                 </div>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </div>
            </div>
            <!--  cerramos div columna destacados / div 100% de enlaces -->
           </div>
@@ -7235,26 +7257,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                per a l’atenció i formació de persones (infants, joves i adults) amb discapacitats, necessitats especials o situació de vulnerabilitat (serveis d’intervenció socioeducativa i centres oberts), incloent-hi el transport escolar.
               </li>
               <li>
-               En els estudis de
-               <strong>
-                batxillerat i cicles formatius
-               </strong>
-               represa de tota l’activitat presencial.
-              </li>
-              <li>
-               Es permeten les
-               <strong>
-                festes de final de curs i les graduacions d’alumnes no universitaris
-               </strong>
-               :
-               <br/>
-               - Amb caràcter preferent, aquestes celebracions han de tenir lloc en espais exteriors.
-               <br/>
-               - a l’exterior: màxim 500 persones (alumnat inclòs) , 2,5 m2 per persona, sense necessitat d’estar asseguts, i s’hi permet el consum de begudes i aliments si són racions individuals no compartides;
-               <br/>
-               - a l’interior: màxim 250 persones (alumnat inclòs), cada persona ha de disposar de 2,5 m2, assegudes (excepte per recollir el premi, diploma o similar), sense superar el 50% de l’aforament màxim de l’espai si hi participen les famílies dels alumnes, amb seient lliure entre membres de diferents bombolles de convivència i sense que s’hi permeti el consum d’aliments i begudes.
-              </li>
-              <li>
                En l’àmbit de les
                <strong>
                 activitats docents universitàries
@@ -7269,45 +7271,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                <strong>
                 :
                </strong>
-               <ul>
-                <li>
-                 70% aforament,  assistents asseguts, amb un màxim de 1.000 persones o  3.000 a l’aire lliure o amb condicions de ventilació reforçada, mesures per evitar aglomeracions i amb assignació prèvia de seients.
-                </li>
-               </ul>
-              </li>
-              <li>
-               Els centres de
-               <strong>
-                formació d'adults, les escoles oficials d'idiomes, els ensenyaments de règim especial reglats i les escoles de música i de dansa autoritzades
-               </strong>
-               pel Departament d’Educació d'acord amb el Decret 179/1993, de 27 de juliol, pel qual es regulen les escoles de música i de dansa, mesures per reduir la presencialitat.
-              </li>
-              <li>
-               <strong>
-                Formació no reglada presencial
-               </strong>
-               : sense limitació de persones.
-              </li>
-              <li>
-               Es permeten les
-               <strong>
-                activitats extraescolars i l'esport escolar,
-               </strong>
-               organitzades dins o fora d'un centre educatiu per qualsevol entitat pública o privada.
-              </li>
-              <li>
-               Es permet el
-               <strong>
-                lleure educatiu
-               </strong>
-               <strong>
-                a les etapes d’educació infantil, primària, secundària, batxillerat i cicles de formació professional
-               </strong>
-               , així com les activitats en l'àmbit del
-               <strong>
-                lleure inclusiu
-               </strong>
-               per a persones amb discapacitats.
               </li>
               <li>
                Als
@@ -7608,7 +7571,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="fpca_article">
            <div class="data_article col-xs-12">
             Data d'actualització:
-							 16.07.2021
+							 19.07.2021
            </div>
           </div>
          </div>
