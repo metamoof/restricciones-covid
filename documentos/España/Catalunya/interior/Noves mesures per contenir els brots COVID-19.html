@@ -1717,7 +1717,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       </div>
                       <ul class="NG-megamenu__nav">
                        <li class="NG-megamenu__nav-item">
-                        <a class="" href="http://agricultura.gencat.cat/ca/departament/agents-rurals/interreg-poctefa/loupo/" target="_blank" title="Agents rurals">
+                        <a class="" href="/ca/arees_dactuacio/agents-rurals/interreg-poctefa/loupo/" target="_blank" title="Agents rurals">
                          Agents rurals
                          <span class="sr-only">
                           . Obre en una nova finestra.
@@ -6596,6 +6596,86 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
            <div class="row">
             <!-- Comprovamos si esta activado el modo carrusel para las imagenes (por defecto esta a false) -->
             <div class="col-sm-8 basic_text_peq">
+             <!-- Revisamos si tiene activado el formato carrusel -->
+             <!-- Formato carrusel activado -->
+             <div class="slider-quadrat col-sm-12">
+              <div class="box-sm">
+               <div class="carousel slide slider_imatges slider_petit inici" data-ride="carousel" id="carrusel-d4ea904e-0edf-11eb-a022-005056924a59">
+                <div class="slider_imatges_cont">
+                 <!--  Botons de navegaci� -->
+                 <div class="slide_navigator c-100 margin-small" style="height:0">
+                  <div class="slide_left">
+                   <a data-slide="prev" href="#carrusel-d4ea904e-0edf-11eb-a022-005056924a59">
+                    <img alt="left" src="/web/resources/fwkResponsive/fpca_diapositives/img/NG_slidergran_left.png">
+                    </img>
+                   </a>
+                  </div>
+                  <div class="slide_right">
+                   <a data-slide="next" href="#carrusel-d4ea904e-0edf-11eb-a022-005056924a59">
+                    <img alt="right" src="/web/resources/fwkResponsive/fpca_diapositives/img/NG_slidergran_right.png">
+                    </img>
+                   </a>
+                  </div>
+                 </div>
+                 <!-- Fi dels botons de navegaci� -->
+                 <!-- Cos de l'slider -->
+                 <div class="carousel-inner">
+                  <!-- Recorremos el listado de imagenes -->
+                  <div class="item active">
+                   <div class="carousel-image">
+                    <!-- Revisamos si es una imagen interna o externa y cogemos los datos -->
+                    <!-- Construimos la imagen -->
+                    <img alt="Mesures vigents" class="img-responsive" src="/web/.content/home/030_arees_dactuacio/proteccio_civil/consells_autoproteccio_emergencies/coronavirus/Noves_mesures_per_contenir_els_brots_COVID-19/infografies_horitz_mesures/Mesures-15-oct-horitz-CAT-pag1.png_1069589618.png">
+                    </img>
+                   </div>
+                   <!-- Contenedor del pie de imagen -->
+                   <div class="carousel-caption" id="carousel-caption-d4ea904e-0edf-11eb-a022-005056924a59">
+                    <span class="peuImatge">
+                    </span>
+                   </div>
+                  </div>
+                  <div class="item">
+                   <div class="carousel-image">
+                    <!-- Revisamos si es una imagen interna o externa y cogemos los datos -->
+                    <!-- Construimos la imagen -->
+                    <img alt="Mesures vigents" class="img-responsive" src="/web/.content/home/030_arees_dactuacio/proteccio_civil/consells_autoproteccio_emergencies/coronavirus/Noves_mesures_per_contenir_els_brots_COVID-19/infografies_horitz_mesures/Mesures-15-oct-horitz-CAT-pag2.png_1069589618.png">
+                    </img>
+                   </div>
+                   <!-- Contenedor del pie de imagen -->
+                   <div class="carousel-caption" id="carousel-caption-d4ea904e-0edf-11eb-a022-005056924a59">
+                    <span class="peuImatge">
+                    </span>
+                   </div>
+                  </div>
+                  <div class="item">
+                   <div class="carousel-image">
+                    <!-- Revisamos si es una imagen interna o externa y cogemos los datos -->
+                    <!-- Construimos la imagen -->
+                    <img alt="Mesures vigents" class="img-responsive" src="/web/.content/home/030_arees_dactuacio/proteccio_civil/consells_autoproteccio_emergencies/coronavirus/Noves_mesures_per_contenir_els_brots_COVID-19/infografies_horitz_mesures/Mesures-15-oct-horitz-CAT-pag3.png_1069589618.png">
+                    </img>
+                   </div>
+                   <!-- Contenedor del pie de imagen -->
+                   <div class="carousel-caption" id="carousel-caption-d4ea904e-0edf-11eb-a022-005056924a59">
+                    <span class="peuImatge">
+                    </span>
+                   </div>
+                  </div>
+                 </div>
+                 <!-- Fi del cos de l'slider -->
+                </div>
+               </div>
+               <!-- Incluimos el JS del carrusel y llamamos a la funcion que lo configura y crea los bullets -->
+               <script src="/web/resources/fwkResponsive/js/carrusel_generic.js" type="text/javascript">
+               </script>
+               <script type="text/javascript">
+                $(function(){
+				carruselArticle.configuraBullets($("#carrusel-d4ea904e-0edf-11eb-a022-005056924a59"),"d4ea904e-0edf-11eb-a022-005056924a59");
+			});
+               </script>
+               <div>
+               </div>
+              </div>
+             </div>
              <div class="pd-15x">
               <p>
                Atesa la millora de la situació epidemiològica i assistencial actual de Catalunya, el PROCICAT ha aprovat rebaixar les mesures dirigides a reduir els contagis de COVID-19. Actualment es mantenen les restriccions només per a determinades activitats considerades de més risc, així com mesures generals de prevenció.
@@ -6622,6 +6702,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 . Obre en una nova finestra.
                </span>
               </a>
+             </div>
+             <div class="basic_color xar-socials mt_20 blau4">
+              <!-- Auditoria Accesibilidad - Se inserta un "span" oculto en los enlaces que abren en una ventana nueva para que quede indicado -->
+              <a class="tit" href="/web/.content/home/030_arees_dactuacio/proteccio_civil/consells_autoproteccio_emergencies/coronavirus/Noves_mesures_per_contenir_els_brots_COVID-19/Infografies-vertical/Mesures-15-oct-vert-CAT.pdf">
+               Infografies descarregables
+              </a>
+              <p>
+               Format vertical
+              </p>
              </div>
             </div>
            </div>
@@ -6685,7 +6774,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                </li>
                <li class="list-group-item col-sm-6">
                 <a class="scroll" href="#bloc11">
-                 Educació, lleure educatiu i intervenció socioeducativa
+                 Àmbit educatiu
                 </a>
                </li>
                <li class="list-group-item col-sm-6">
@@ -7372,7 +7461,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </span>
           <div class="row">
            <h2 class="basic_title col-sm-12 pd-10">
-            Educació, lleure educatiu i intervenció socioeducativa
+            Àmbit educatiu
            </h2>
            <!-- Dependiendo de si hay columna a la derecha o no, ponemos una clase al div del cuerpo u otra (100% o 70%) -->
            <!-- Si se ha marcado intercalar las im�genes, dependiendo del index del bloque que estamos recorriendo,
